@@ -2,13 +2,11 @@ define([
     'backbone',
     'collections/sheetCollection',
     'views/appView',
-    'json!data/sampleData.json',
     'iframeMessenger'
 ], function(
     Backbone,
     SheetCollection,
     AppView,
-    SampleData,
     iframeMessenger
 ) {
    'use strict';
@@ -22,14 +20,11 @@ define([
         // DEBUG: What we get given on boot
         console.log(el, context, config, mediator);
 
-        // Load local JSON data
-        console.log(SampleData);
-
         // Create collection from Google spreadsheet key and sheetname
         // from live external data
         var videogameCollection = new SheetCollection({
             key: key,
-            sheetname: 'videogames'
+            sheetname: 'Sheet1'
         });
        
         // Create an app view, passing along the collection made above

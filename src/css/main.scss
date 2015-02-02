@@ -17,7 +17,9 @@ $guss-webfonts-base-url: '//pasteup.guim.co.uk/fonts/';
 @include guss-webfonts();
 @include guss-typography-defaults;
 
-
-.guInteractive {
-    color: map-get($pasteup-palette, 'guardian-brand');
+body{
+	margin:0;
+}
+figure.element-interactive{
+	margin:0
 }

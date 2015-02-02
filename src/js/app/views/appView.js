@@ -3,11 +3,13 @@ define([
     'mustache',
     'routes',
     'text!templates/appTemplate.html',
+    'underscore'
 ], function(
     Backbone,
     Mustache,
     routes,
-    template
+    template,
+    _
 ) {
     'use strict';
 
@@ -16,46 +18,43 @@ define([
         className: 'guInteractive',
 
         events: {
-            'click .column-header': 'sortTable'
+            'click .collapseButton': 'expandText'
         },
-
-        sortTable: function(event) {
-            var $target = $(event.currentTarget);
-            var sortColumn = $target.data('sort');
-
-            
-            this.collection.comparator = function(model) {
-                return model.get(sortColumn);
-            };
-            
-            this.collection.sort();
-            $target.toggleClass('active');
-
-
-            if ($target.hasClass('active')) {
-                this.sortReversed = !this.sortReversed;
+        expandText: function(e){
+            var state = $(e.currentTarget).attr('data-toggle');
+            // var currentActor = $(e.currentTarget).attr('data-actor');
+            // var currentActorObject = _.findWhere(this.collection.toJSON(),{id:currentActor});
+            console.log(state);
+            if(state==="readMore"){
+                $(e.currentTarget).closest('.actorContainer').addClass('active');
+            }else{
+                $(e.currentTarget).closest('.actorContainer').removeClass('active');
+                // Update scroll position too
             }
-
-            if (this.sortReversed) {
-                this.collection.models.reverse();
-            }
-            this.render();
+            
         },
+        
 
         initialize: function() {
-            // Listen to routes
-            /*
-            routes.on('route:default', this.defaultRender, this);
-            routes.on('route:catalogue', this.catalogueRender, this);
-            routes.on('route:singleGame', this.singleGameRender, this);
-            */
            this.collection.on('sync', this.render, this);
 
            this.sortReversed = false;
         },
 
         render: function() {
-            var templateData = { rows: this.collection.toJSON() };
+            var screenSize = "big";
+
+            var furniture = {
+                title: "The celebrated unknowns",
+                standfirst: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            }
+
+            var templateData = { 
+                actors: this.collection.toJSON(),
+                furniture: furniture,
+                screenSize: screenSize,
+                byline: ""
+            };
             this.$el.html(Mustache.render(template, templateData));
             
             return this;

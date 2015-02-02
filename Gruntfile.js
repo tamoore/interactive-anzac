@@ -13,7 +13,6 @@ module.exports = function(grunt) {
           hostname: '*',
           livereload: true,
           base: './',
-          open: 'http://localhost:' + pkg.config.port + '/build/',
           middleware: function (connect, options, middlewares) {
             // inject a custom middleware http://stackoverflow.com/a/24508523 
             middlewares.unshift(function (req, res, next) {
