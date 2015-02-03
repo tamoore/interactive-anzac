@@ -22,16 +22,30 @@ define([
         },
         expandText: function(e){
             var state = $(e.currentTarget).attr('data-toggle');
-            // var currentActor = $(e.currentTarget).attr('data-actor');
-            // var currentActorObject = _.findWhere(this.collection.toJSON(),{id:currentActor});
-            console.log(state);
             if(state==="readMore"){
                 $(e.currentTarget).closest('.actorContainer').addClass('active');
             }else{
-                $(e.currentTarget).closest('.actorContainer').removeClass('active');
-                // Update scroll position too
+                if($(window).width()<960){
+                    this.updateScrollposition(e);
+                }else{
+                    $(e.currentTarget).closest('.actorContainer').removeClass('active');
+                }
             }
+        },
+
+        updateScrollposition: function(event){
+            var elScrolltop = $(event.currentTarget).offset().top;
+            var currentScrollHeight = $(window).scrollTop();
+            var difference = elScrolltop - currentScrollHeight;
+
+            $(event.currentTarget).closest('.actorContainer').removeClass('active');
             
+            elScrolltop = $(event.currentTarget)
+                .closest('.actorContainer')
+                .find('.descriptionShort .collapseButton')
+                .offset().top;
+
+            window.scrollTo(0,elScrolltop - difference);
         },
         
 
@@ -44,16 +58,49 @@ define([
         render: function() {
             var screenSize = "big";
 
+            var data = _.map(this.collection.toJSON(),function(actor){
+                var paragraphs = actor.fulltext.split('\n');
+                actor.fulltext = _.filter(paragraphs,function(paragraph){
+                    return paragraph.length > 5;
+                });
+                return actor;
+            });
+
             var furniture = {
                 title: "The celebrated unknowns",
                 standfirst: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            };
+
+            var headline = $('header.content__head h1');
+            var standfirst = $('header.content__head .content__standfirst p');
+            var byline = $('.content__main .content__meta-container.u-cf');
+
+            if(headline.length > 0){
+                headline = $(headline).get(0).textContent;
+            }else{
+                headline = furniture.title;
             }
 
+            if(standfirst.length > 0){
+                standfirst = $(standfirst).get(0).textContent;
+            }else{
+                standfirst = furniture.standfirst;
+            }
+
+            if(byline.length > 0){
+                byline = $(byline).get(0).outerHTML;
+            }else{
+                byline = "";
+            }
+            console.log(byline)
+
+
             var templateData = { 
-                actors: this.collection.toJSON(),
-                furniture: furniture,
+                actors: data,
+                title: headline,
+                standfirst: standfirst,
                 screenSize: screenSize,
-                byline: ""
+                byline: byline
             };
             this.$el.html(Mustache.render(template, templateData));
             

@@ -24,6 +24,9 @@
 		line-height:1.25em;
 		margin-top:0;
 	}
+	.descriptionShort p:first-child, .descriptionLong p:first-child{
+		margin-top:0;
+	}
 
 	#actors{
 		position:relative;
@@ -61,6 +64,7 @@
 		h4{
 			margin:0 0 0.2em;
 			font-size:24px;
+			line-height:1.1em;
 		}
 		h5{
 			font-family:'Guardian Text Sans Web';
@@ -81,6 +85,7 @@
 	}
 	.actorMeta{
 		border-bottom:1px solid #424242;
+		margin-bottom:20px;
 	}
 	.collapseButton{
 		border:2px solid #acacac;
@@ -96,6 +101,12 @@
 		display:block;
 		outline:none;
 		cursor:pointer;
+		transition: background 0.5s;
+		line-height:normal;
+
+		&:hover{
+			background:#333;
+		}
 	}
 
 	@media(min-width:740px){
@@ -132,40 +143,84 @@
 				margin:0;
 			}
 		.align-full{
+			max-width:1300px;
+			margin:80px auto;
+			.actorInformation{
+				max-width:1120px;
+				margin:0 auto;
+				overflow:hidden;
+			}
 			.actorMeta{
-				width:360px;
+				width:40%;
 				float:left;
-				padding-right:60px;
+				padding:0 40px;
 				border-bottom:none;
 			}
 			.actorDescription{
-				margin-left:360px;
+				width:60%;
+				float:left;
+				padding:0 40px;
 			}
 			
 		}
 
 		.align-left{
+			overflow:hidden;
+			max-width:1040px;
+			margin:80px auto;
 			position:relative;
 			img{
-				padding-right:400px;
+				width:60%;
+				float:left;
+				transition: width 0.5s;
 			}
 			.actorInformation{
-				position:absolute;
 				top:0;
 				right:0;
-				width:400px;
+				width:40%;
+				background:#1a1a1a;
+				float:left;
+				transition: width 0.5s;
 			}
 			&.active{
-				.actorInformation{
-					position:relative;
-					padding-left:520px;
-					width:auto;
-				}
+				z-index:100;
 				img{
-					width:480px;
-					position:absolute;
-					left:0;
-					padding-right:0;
+					width:40%;
+
+				}
+				.actorInformation{
+					width:60%;
+					
+				}
+			}
+		}
+		.align-right{
+			overflow:hidden;
+			max-width:1040px;
+			margin:80px auto;
+			position:relative;
+
+			img{
+				width:60%;
+				float:right;
+				transition: width 0.5s;
+			}
+
+			.actorInformation{
+				float:left;
+				top:0;
+				left:0;
+				width:40%;
+				background:#1a1a1a;
+				transition: width 0.5s;
+			}
+			&.active{
+				z-index:100;
+				img{
+					width:40%;
+				}
+				.actorInformation{
+					width:60%;
 				}
 			}
 		}

@@ -81,7 +81,7 @@ module.exports = function(grunt) {
           'src/**/*.json',
           'src/js/app/templates/*.html'
         ],
-        tasks: ['jshint', 'requirejs'],
+        tasks: ['jshint', 'requirejs','replace:local'],
         options: {
           spawn: false,
           livereload: true
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
         prod: {
             options: {
                 patterns: [{
-                  match: /\/assets/g,
+                  match: /{{assets}}/g,
                   replacement: pkg.config.cdn_url + 'assets-'+currentTime
                 }]
             },
@@ -133,8 +133,8 @@ module.exports = function(grunt) {
         local: {
             options: {
                 patterns: [{
-                  match: /"assets/g,
-                  replacement: '"http://localhost:' + pkg.config.port + '/build/assets'
+                  match: /{{assets}}/g,
+                  replacement: 'http://localhost:' + pkg.config.port + '/build/assets'
                 },
                 {
                   match: /\/\/pasteup\.guim\.co\.uk\/fonts\/0\.1\.0/g,
