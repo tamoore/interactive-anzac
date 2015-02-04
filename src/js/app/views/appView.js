@@ -24,6 +24,10 @@ define([
             var state = $(e.currentTarget).attr('data-toggle');
             if(state==="readMore"){
                 $(e.currentTarget).closest('.actorContainer').addClass('active');
+            if($(window).width()>=960){
+                
+                // this.transitionBlock($(e.currentTarget).closest('.actorContainer'));
+            }
             }else{
                 if($(window).width()<960){
                     this.updateScrollposition(e);
@@ -31,6 +35,18 @@ define([
                     $(e.currentTarget).closest('.actorContainer').removeClass('active');
                 }
             }
+        },
+
+        transitionBlock:function(actorContainer){
+            console.log(actorContainer);
+            $(actorContainer).find('.actorInformation').fadeOut(100,function(){
+                $(actorContainer).addClass('active');
+            });
+            $(actorContainer).find('img').animate({width:"40%"},{duration:400,queue:false})
+            $(actorContainer).find('.actorInformation').animate({width:"60%"},{duration:400,queue:false})
+            $(actorContainer).find('.actorInformation').fadeIn(700);
+
+
         },
 
         updateScrollposition: function(event){

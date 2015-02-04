@@ -13,7 +13,7 @@
                     <div class="actorMeta">
                         <h4>{{name}}</h4>
                         <h5>{{prize}}</h5>
-                        <h6>{{nominations}}</h6>
+                        <h6>{{caption}}</h6>
                     </div>
                     <div class="actorDescription">
                         <div class="descriptionShort">
@@ -22,7 +22,7 @@
                         </div>
                         <div class="descriptionLong">
                             {{#fulltext}}
-                                <p>{{.}}</p>
+                                <p>{{{.}}}</p>
                             {{/fulltext}}
                             <button class="collapseButton" data-toggle="readLess" data-actor="{{id}}">Close</button>
                         </div>

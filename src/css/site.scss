@@ -161,18 +161,31 @@
 				float:left;
 				padding:0 40px;
 			}
+			&.active{
+				.descriptionShort{
+					display:none;
+				}
+				.descriptionLong{
+					display:block;
+				}
+			}
 			
 		}
 
-		.align-left{
+		.align-left,.align-right{
 			overflow:hidden;
 			max-width:1040px;
 			margin:80px auto;
 			position:relative;
 			img{
 				width:60%;
-				float:left;
-				transition: width 0.5s;
+			}
+			.descriptionLong{
+				height:0;
+				opacity:0;
+				display:block;
+				overflow:hidden;
+				transition:width 1s;
 			}
 			.actorInformation{
 				top:0;
@@ -180,49 +193,70 @@
 				width:40%;
 				background:#1a1a1a;
 				float:left;
-				transition: width 0.5s;
+				width:40%;
 			}
 			&.active{
 				z-index:100;
 				img{
+					-webkit-animation:shrink 1.5s;
 					width:40%;
-
 				}
+
 				.actorInformation{
+					-webkit-animation:fadeout 1.5s,grow 1.5s;
 					width:60%;
-					
+					.descriptionShort{
+						display:none;
+					}
+					.descriptionLong{
+						-webkit-animation:add 1.5s;
+						height:auto;
+						opacity:1;
+					}
 				}
 			}
 		}
-		.align-right{
-			overflow:hidden;
-			max-width:1040px;
-			margin:80px auto;
-			position:relative;
-
+		.align-left{
 			img{
-				width:60%;
-				float:right;
-				transition: width 0.5s;
-			}
-
-			.actorInformation{
 				float:left;
-				top:0;
-				left:0;
-				width:40%;
-				background:#1a1a1a;
-				transition: width 0.5s;
 			}
-			&.active{
-				z-index:100;
-				img{
-					width:40%;
-				}
-				.actorInformation{
-					width:60%;
-				}
+		}
+		.align-right{
+			img{
+				float:right;
 			}
 		}
 	}
 }
+
+@-webkit-keyframes shrink{
+	0%{width:60%}
+	10%{width:60%}
+	30%{width:40%;}
+}
+
+@-webkit-keyframes grow{
+	0%{width:40%}
+	10%{width:40%}
+	30%{width:60%;}
+}
+
+@-webkit-keyframes fadeout{
+	0%{	opacity:1;}
+	10%{opacity:0;}
+	25%{opacity:0}
+	70%{opacity:1}
+}
+@-webkit-keyframes remove{
+	0%{height:auto;}
+	9%{height:auto;}
+	10%{height: 0;}
+}
+
+@-webkit-keyframes add{
+	0%{height:0; opacity:0;}
+	9%{height:0; opacity:0;}
+	10%{height:auto; opacity:1;}
+}
+
+
