@@ -1,19 +1,20 @@
 <div class="guInteractive">
     <header>
         <h2>{{title}}</h2>
-        <h3>{{standfirst}}</h3>
+        <h3>{{subtitle}}</h3>
+        <h4>{{standfirst}}</h4>
         {{{byline}}}
     </header>
     
     <div id="actors">
         {{#actors}}
             <div class="actorContainer align-{{align}}" data-actor="{{id}}">
-                <img src="{{assets}}/imgs/{{id}}/{{screenSize}}.jpg" />
+                <img src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/{{screenSize}}.jpg" />
                 <div class="actorInformation">
                     <div class="actorMeta">
-                        <h4>{{name}}</h4>
-                        <h5>{{prize}}</h5>
-                        <h6>{{caption}}</h6>
+                        <h5>{{name}}</h5>
+                        <h6>{{prize}}</h6>
+                        <h6 class="caption">{{caption}}</h6>
                     </div>
                     <div class="actorDescription">
                         <div class="descriptionShort">

@@ -11,7 +11,8 @@ require.config({
       'json'            : '../libs/json',
       'd3'              : '../libs/d3',
       'mustache'        : '../libs/mustache',
-      'iframeMessenger' : '../libs/iframeMessenger'
+      'iframeMessenger' : '../libs/iframeMessenger',
+      'lazyload' : '../libs/lazyload'
    },
    shims: {
        backbone: {

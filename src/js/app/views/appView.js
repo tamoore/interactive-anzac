@@ -3,13 +3,17 @@ define([
     'mustache',
     'routes',
     'text!templates/appTemplate.html',
-    'underscore'
+    'underscore',
+    'views/analytics',
+    'lazyload'
 ], function(
     Backbone,
     Mustache,
     routes,
     template,
-    _
+    _,
+    ga,
+    lazy
 ) {
     'use strict';
 
@@ -22,31 +26,42 @@ define([
         },
         expandText: function(e){
             var state = $(e.currentTarget).attr('data-toggle');
+            
             if(state==="readMore"){
+                this.trackEvent(e);
                 $(e.currentTarget).closest('.actorContainer').addClass('active');
-            if($(window).width()>=960){
-                
-                // this.transitionBlock($(e.currentTarget).closest('.actorContainer'));
-            }
             }else{
                 if($(window).width()<960){
                     this.updateScrollposition(e);
                 }else{
                     $(e.currentTarget).closest('.actorContainer').removeClass('active');
+                    // $(e.currentTarget).closest('.actorContainer').addClass('inactive');
                 }
             }
         },
+        trackEvent:function(e){
+            var actorId = $(e.currentTarget).attr('data-actor');
+            window.ga('send', {
+              'hitType': 'event',          // Required.
+              'eventCategory': 'readmore',   // Required.
+              'eventAction': 'click',      // Required.
+              'eventLabel': actorId
+            });
+        },
+
 
         transitionBlock:function(actorContainer){
             console.log(actorContainer);
             $(actorContainer).find('.actorInformation').fadeOut(100,function(){
                 $(actorContainer).addClass('active');
             });
-            $(actorContainer).find('img').animate({width:"40%"},{duration:400,queue:false})
-            $(actorContainer).find('.actorInformation').animate({width:"60%"},{duration:400,queue:false})
+            $(actorContainer).find('img')
+                .animate({width:"40%"},{duration:400,queue:false});
+            
+            $(actorContainer).find('.actorInformation')
+                .animate({width:"60%"},{duration:400,queue:false});
+            
             $(actorContainer).find('.actorInformation').fadeIn(700);
-
-
         },
 
         updateScrollposition: function(event){
@@ -71,8 +86,22 @@ define([
            this.sortReversed = false;
         },
 
+        lazyLoad: function(){
+            lazy.init({
+              offset: 800,
+              throttle: 250,
+              unload: false,
+            });
+        },
+
         render: function() {
+            $('.l-side-margins').addClass('interactiveStyling');
+            
             var screenSize = "big";
+            if($(window).width() < 965){
+                screenSize = "small";
+            }
+            
 
             var data = _.map(this.collection.toJSON(),function(actor){
                 var paragraphs = actor.fulltext.split('\n');
@@ -83,16 +112,21 @@ define([
             });
 
             var furniture = {
-                title: "The celebrated unknowns",
-                standfirst: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                title: "Starry, starry night",
+                subtitle: "Oscar winners on what it’s like to win Hollywood's biggest prize",
+                standfirst: "Susan Sarandon thinks it's the luck of the draw, Juliette Binoche tussled with Lauren Bacall, and someone stood on Ben Kingsley's head: fourteen Oscar winners reveal what really goes on at the Academy Awards"
             };
-
+            var title = furniture.title;
+            var subtitle = furniture.subtitle;
             var headline = $('header.content__head h1');
             var standfirst = $('header.content__head .content__standfirst p');
             var byline = $('.content__main .content__meta-container.u-cf');
 
+
             if(headline.length > 0){
-                headline = $(headline).get(0).textContent;
+                headline = $(headline).get(0).textContent.split(':');
+                title = headline[0];
+                subtitle = headline[1];
             }else{
                 headline = furniture.title;
             }
@@ -108,18 +142,18 @@ define([
             }else{
                 byline = "";
             }
-            console.log(byline)
-
 
             var templateData = { 
                 actors: data,
-                title: headline,
+                title: title,
+                subtitle:subtitle,
                 standfirst: standfirst,
                 screenSize: screenSize,
                 byline: byline
             };
             this.$el.html(Mustache.render(template, templateData));
-            
+
+            this.lazyLoad();
             return this;
         }
     });
