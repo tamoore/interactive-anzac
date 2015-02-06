@@ -51,7 +51,6 @@ define([
 
 
         transitionBlock:function(actorContainer){
-            console.log(actorContainer);
             $(actorContainer).find('.actorInformation').fadeOut(100,function(){
                 $(actorContainer).addClass('active');
             });
