@@ -68,6 +68,7 @@ figure.element-interactive{
     @media (min-width: 46.25em){
         .byline{
             padding-right:0;
+            width:auto;
         }
     }
     @media (min-width: 61.25em){
@@ -89,7 +90,7 @@ figure.element-interactive{
         }
 
         .social__item{
-            padding-right:35px;
+            // padding-right:35px;
         }
     }
 }
