@@ -18,7 +18,7 @@ define([
 
     function init(el, context, config, mediator) {
         // DEBUG: What we get given on boot
-        console.log(el, context, config, mediator);
+        // console.log(el, context, config, mediator);
 
         // Create collection from Google spreadsheet key and sheetname
         // from live external data

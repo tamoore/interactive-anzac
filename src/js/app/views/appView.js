@@ -105,7 +105,13 @@ define([
 
             var data = _.map(this.collection.toJSON(),function(actor){
                 var paragraphs = actor.fulltext.split('\n');
+                var excerptparagraphs = actor.excerpt.split('\n');
+                
                 actor.fulltext = _.filter(paragraphs,function(paragraph){
+                    return paragraph.length > 5;
+                });
+
+                actor.excerpt = _.filter(excerptparagraphs,function(paragraph){
                     return paragraph.length > 5;
                 });
                 return actor;

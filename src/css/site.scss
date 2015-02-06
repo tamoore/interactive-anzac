@@ -54,6 +54,12 @@
 	.actorContainer{
 		background:#1a1a1a;
 		margin-top:40px;
+		a{
+			text-decoration:underline;
+			&:hover{
+				color:#dfdfdf;
+			}
+		}
 		img{
 			width:100%;
 		}

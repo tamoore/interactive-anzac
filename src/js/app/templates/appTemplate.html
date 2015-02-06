@@ -18,7 +18,9 @@
                     </div>
                     <div class="actorDescription">
                         <div class="descriptionShort">
-                            <p>{{{excerpt}}}</p>
+                            {{#excerpt}}
+                                <p>{{{.}}}</p>
+                            {{/excerpt}}
                             <button class="collapseButton" data-toggle="readMore" data-actor="{{id}}">Read more</button>
                         </div>
                         <div class="descriptionLong">
