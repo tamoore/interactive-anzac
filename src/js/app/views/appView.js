@@ -95,7 +95,8 @@ define([
 
         render: function() {
             $('.l-side-margins').addClass('interactiveStyling');
-            
+            $('#article-body').addClass('interactivePadding');
+            var isWeb = true;
             var screenSize = "big";
             if($(window).width() < 965){
                 screenSize = "small";
@@ -147,6 +148,9 @@ define([
             }else{
                 byline = "";
             }
+            if(typeof window.guardian === "undefined"){
+                isWeb = false;
+            }
 
             var templateData = { 
                 actors: data,
@@ -154,7 +158,8 @@ define([
                 subtitle:subtitle,
                 standfirst: standfirst,
                 screenSize: screenSize,
-                byline: byline
+                byline: byline,
+                isWeb: isWeb
             };
             this.$el.html(Mustache.render(template, templateData));
 

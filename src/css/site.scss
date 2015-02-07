@@ -4,6 +4,8 @@
 	color:#f4f4f4;
 	a{
 		color:#f4f4f4;
+		text-shadow:none !important;
+		background:none !important;
 	}
 	header{
 		padding:0 20px;
@@ -15,7 +17,7 @@
 	}
 
 	h1,h2,h3,h4,h5,h6{
-		font-family:"Guardian Egyptian Web"
+		font-family:"Guardian Egyptian Web","Egyptian Display","Guardian Text Egyptian Web","Egyptian Text",Georgia,serif;
 	}
 	h2{
 		font-size:42px;
@@ -83,7 +85,7 @@
 			line-height:1.1em;
 		}
 		h6{
-			font-family:'Guardian Text Sans Web';
+			font-family:'Guardian Text Sans Web','Agate Sans',sans-serif;
 			margin:1em 0 0.1em;
 			font-size:15px;
 			font-weight:bold;
@@ -107,7 +109,7 @@
 		height:38px;
 		background:transparent;
 		color:#dcdcdc;
-		font-family:'Guardian Text Sans Web';
+		font-family:'Guardian Text Sans Web','Agate Sans',sans-serif;
 		font-weight:bold;
 		font-size:14px;
 		padding:0 20px;

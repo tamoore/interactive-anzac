@@ -1,10 +1,12 @@
 <div class="guInteractive">
+    {{#isWeb}}
     <header>
         <h2>{{title}}</h2>
         <h3>{{subtitle}}</h3>
         <h4>{{standfirst}}</h4>
         {{{byline}}}
     </header>
+    {{/isWeb}}
     
     <div id="actors">
         {{#actors}}

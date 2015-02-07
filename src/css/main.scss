@@ -23,7 +23,10 @@ body{
 figure.element-interactive{
 	margin:0
 }
-
+#article-body.interactivePadding{
+    padding-left:0;
+    padding-right:0;
+}
 
 .interactiveStyling .content__main .content__meta-container.u-cf{
     display:none
