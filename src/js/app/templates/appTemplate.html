@@ -1,17 +1,26 @@
 <div class="guInteractive">
-    {{#isWeb}}
+
     <header>
-        <h2>{{title}}</h2>
-        <h3>{{subtitle}}</h3>
+        <h2>{{{title}}}</h2>
         <h4>{{standfirst}}</h4>
-        {{{byline}}}
+        <p>{{{byline}}}</p>
     </header>
-    {{/isWeb}}
-    
+
+
     <div id="actors">
         {{#actors}}
             <div class="actorContainer align-{{align}}" data-actor="{{id}}">
-                <img src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/{{screenSize}}.jpg" />
+                <div class="item">
+                  <!--<a href="#" rel="{{faderid}}" class="open-gallery"><span class="rounded-icon gallery2__fullscreen"><i class="i i-expand-white"></i><i class="i i-expand-black"></i></span></a>-->
+                  <img class="before-image" src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/big.jpg" />
+                  {{#video}}
+                  <video poster="{{assets}}/imgs/{{id}}/big_alt.jpg" loop class="after-image">
+                    <source src="{{videostatic}}" type="video/mp4">
+                  </video>{{/video}}
+                    {{#image}}
+                    <img class="after-image" src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/big_alt.jpg" />
+                    {{/image}}
+                </div>
                 <div class="actorInformation">
                     <div class="actorMeta">
                         <h5>{{name}}</h5>
@@ -23,19 +32,19 @@
                             {{#excerpt}}
                                 <p>{{{.}}}</p>
                             {{/excerpt}}
-                            <button class="collapseButton" data-toggle="readMore" data-actor="{{id}}">Read more</button>
+                            <!--<button class="collapseButton" data-toggle="readMore" data-actor="{{id}}">Read more</button>-->
                         </div>
                         <div class="descriptionLong">
                             {{#fulltext}}
                                 <p>{{{.}}}</p>
                             {{/fulltext}}
-                            <button class="collapseButton" data-toggle="readLess" data-actor="{{id}}">Close</button>
+                            <!--<button class="collapseButton" data-toggle="readLess" data-actor="{{id}}">Close</button>-->
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
         {{/actors}}
     </div>
-    
+
 </div>
