@@ -16,6 +16,7 @@ body {
 		margin:20px auto 0;
 	  	overflow: hidden;
 		border-bottom: 1px solid rgba(255,255,255,.4);
+	  	text-align: center;
 	}
 
 	*{
@@ -26,48 +27,55 @@ body {
 		font-family:"Guardian Egyptian Web","Egyptian Display","Guardian Text Egyptian Web","Egyptian Text",Georgia,serif;
 	}
 	h2{
-		font-size: 32px;
+
 		line-height:.5em;
-		margin-bottom: 1.5rem;
+		margin-bottom: 5.5rem;
 	  	margin-top: 2.5rem;
-	  	font-weight: 100;
-	  	display: none;
+
+
+
 	}
 	h2 b {
-	  font-size: 160px;
+
 	  line-height: .9em;
+	  @include fs-headline(1);
+	  font-size: 80px;
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	  display: block;
+	  font-weight: 200;
+	  -webkit-font-smoothing: antialiased;
+
 	}
   	@media(min-width: 980px){
-	  h2 {
-		
+	  h2 b {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		display: inline-block;
+		font-size: 150px !important;
+		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-color: rgba(0,0,0,1);
 	  }
 	}
   	h2 span {
 	  color:#767676;
 	  display: inline-block;
-	  width: 20px;
-	  font-size: 45px;
-	  width: 84px;
+	  @include fs-headline(1);
+	  //-webkit-text-stroke-width: 1px;
+	  font-weight: 100 !important;
+	  //-webkit-text-stroke-color: rgba(0,0,0,1);
+	  font-size: 50px;
+	  position: relative;
 
+	  margin-bottom: -1rem;
 
 	}
   	h2 em {
-	  margin-left: 3.5rem;
-	  font-size: 35px;
+	  font-style: normal;
 	  position: relative;
-	  top: -10px;
-	  
-	  display: inline-block;
-	  margin-top: 1rem;
+	  display: block;
+	  margin-top: 2rem;
 
-	}
-  	h2 em:before {
-	  content: "";
-	  position: absolute;
-	  height: 1px;
-	  border-bottom: 1px solid #767676;
-	  width: 40px;
-	  top: -3.5px;
 	}
 	h3{
 		color:#767676;
@@ -79,11 +87,18 @@ body {
 	  font-weight:normal;
 	  font-size:18px;
 	  margin:1em 0;
+	  text-align: left;
+	  p {
+		font-size: 16px;
+		text-align: left;
+		line-height: 1.5;
+	  }
 
 	}
   	@media(min-width: 980px){
 	 h4 {
 	   width: 900px;
+	   margin: 0 auto;
 	 }
 
 	}
@@ -131,7 +146,17 @@ body {
 		h5{
 			margin:0 0 0.2em;
 			font-size:24px;
-			line-height:1.1em;
+			line-height:1.1em !important;
+		  	@include fs-headline(2);
+		  	-webkit-font-smoothing: antialiased;
+		  	font-weight: 200;
+
+
+		}
+	  	@media(min-width: 980px){
+		  h5 {
+			margin-bottom: 4rem;
+		  }
 		}
 		h6{
 			font-family:'Guardian Text Sans Web','Agate Sans',sans-serif;
@@ -144,14 +169,19 @@ body {
 				color:#aaa;
 				font-weight:normal;
 				margin-top:0;
-				margin-bottom:1em;
+				margin-bottom:0em !important;
+
 			}
 		}
 	}
 	.actorMeta{
 		border-bottom:1px solid #424242;
 		margin-bottom:20px;
+	  	@media(min-width: 980px){
+			border-right: 1px solid rgba(255,255,255,.15);
+	  	}
 	}
+
 	.collapseButton{
 		border:2px solid #acacac;
 		border-radius:40px;
@@ -192,6 +222,7 @@ body {
 		}
 		.actorInformation{
 			padding:30px 40px;
+		  	padding-bottom: 15px;
 		}
 
 		.actorInformation{
@@ -362,6 +393,11 @@ body {
 	}
 	.after-image {
 	  opacity: 1 !important;
+
+	  //transition-property: -webkit-filter;
+	  //transition-duration: 60s;
+
+	  //-webkit-filter: saturate(250%);
 	}
 	.before-image {
 	  transition-duration: 10s !important;
@@ -376,18 +412,27 @@ body {
   }
 }
 .after-image {
+  //-webkit-filter: sepia(100%);
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
+  transition-property: -webkit-filter;
+  transition-duration: 30s;
+  //transition-timing-function: ease;
   &.on {
 	opacity: 1;
+	//-webkit-filter: sepia(0%);
+	//-webkit-filter: saturate(250%);
+	&.saturate {
+
+	}
   }
 }
 
 .before-image {
-
+  //-webkit-filter: sepia(100%);
   transition-property: opacity;
   transition-duration: 3s;
   opacity: 0;
@@ -474,4 +519,51 @@ body {
 	0%{height:0; opacity:0;}
 	9%{height:0; opacity:0;}
 	10%{height:auto; opacity:1;}
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: inline-block;
+  margin-right: 1px;
+
+  &.facebook {
+	background-color: #3067a3 !important;
+	&:hover {
+	  background-color: darken(#3067a3, 10%);
+	}
+  }
+
+  &.twitter {
+	background-color: #03b3ee !important;
+	&:hover {
+	  background-color: darken(#03b3ee, 10%);
+	}
+  }
+
+  &.email {
+	background-color: #767676 !important;
+	&:hover {
+	  background-color: darken(#767676, 10%);
+	}
+  }
+}
+.header__social {
+  padding-top: 24px;
+  margin-top: 18px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2rem;
+  p {
+	display: inline-block;
+	margin-left: 2rem;
+	max-width: 70%;
+
+	a {
+	  font-weight: 600;
+	  text-decoration: none;
+
+	}
+  }
 }

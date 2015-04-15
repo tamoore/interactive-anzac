@@ -2,8 +2,15 @@
 
     <header>
         <h2>{{{title}}}</h2>
-        <h4>{{standfirst}}</h4>
-        <p>{{{byline}}}</p>
+        <h4>{{{standfirst}}}</h4>
+        <div class="header__social">
+            <a href="#" target="_blank" class="social-icon facebook" data-link-name="social facebook voices-header"><img src="{{assets}}/imgs/share-facebook.svg"/></a>
+            <a href="#" target="_blank" data-link-name="social twitter voices-header" class="social-icon twitter"><img src="{{assets}}/imgs/share-twitter.svg"/></a>
+            <a href="#" target="_blank" class="social-icon email" data-link-name="social email voices-header"><img src="{{assets}}/imgs/share-email.svg"/></a>
+            <p>
+                by <a href="">Mike Bowers</a>
+            </p>
+        </div>
     </header>
 
 
@@ -11,34 +18,29 @@
         {{#actors}}
             <div class="actorContainer align-{{align}}" data-actor="{{id}}">
                 <div class="item">
-                  <!--<a href="#" rel="{{faderid}}" class="open-gallery"><span class="rounded-icon gallery2__fullscreen"><i class="i i-expand-white"></i><i class="i i-expand-black"></i></span></a>-->
-                  <img class="before-image" src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/big.jpg" />
+                  <img class="before-image" src="http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/13/{{beforeimageid}}/{{id}}.jpg" />
                   {{#video}}
-                  <video poster="{{assets}}/imgs/{{id}}/big_alt.jpg" loop class="after-image">
-                    <source src="{{videostatic}}" type="video/mp4">
+                  <video poster="http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/13/{{afterimageid}}/{{id}}now.jpg" loop class="after-image" muted>
+                    <source src="http://multimedia.guardianapis.com/interactivevideos/video.php?file={{id}}aaa_FromGAus&format=video/mp4&maxbitrate=2048" type="video/mp4">
+                      <source src="http://multimedia.guardianapis.com/interactivevideos/video.php?file={{id}}aaa_FromGAus&format=video/webm&maxbitrate=2048" type="video/webm">
                   </video>{{/video}}
                     {{#image}}
-                    <img class="after-image" src="{{assets}}/imgs/empty.gif" data-echo="{{assets}}/imgs/{{id}}/big_alt.jpg" />
+                    <img class="after-image" src="http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/13/{{afterimageid}}/{{id}}now.jpg"  />
                     {{/image}}
                 </div>
                 <div class="actorInformation">
                     <div class="actorMeta">
                         <h5>{{name}}</h5>
-                        <h6>{{prize}}</h6>
-                        <h6 class="caption">{{{caption}}}</h6>
+                        <h6>{{date}}</h6>
+                        <h6 class="caption">{{{credit}}}</h6>
                     </div>
                     <div class="actorDescription">
                         <div class="descriptionShort">
-                            {{#excerpt}}
+                            {{#caption}}
                                 <p>{{{.}}}</p>
-                            {{/excerpt}}
-                            <!--<button class="collapseButton" data-toggle="readMore" data-actor="{{id}}">Read more</button>-->
+                            {{/caption}}
                         </div>
                         <div class="descriptionLong">
-                            {{#fulltext}}
-                                <p>{{{.}}}</p>
-                            {{/fulltext}}
-                            <!--<button class="collapseButton" data-toggle="readLess" data-actor="{{id}}">Close</button>-->
                         </div>
 
                     </div>

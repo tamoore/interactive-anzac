@@ -121,16 +121,21 @@ define([
 				clearTimeout(timer);
 				if (target.next()[0].play) {
 					target.next()[0].play();
+					setTimeout(function(){
+						$($(target).next()).addClass("saturate");
+					}, 10000);
+
 					target.next()[0].addEventListener("progress", function(e){
 
-						if(e.srcElement.currentTime >= 25){
-							target.removeClass("on");
-							timer = setTimeout(function() {
-								target.parent().removeClass("parent-on");
-								target.parent().addClass("off");
-								target.next()[0].pause();
-							}, 10000);
-						}
+						//if(e.srcElement.currentTime >= 25){
+						//	target.removeClass("on");
+						//	timer = setTimeout(function() {
+						//		target.parent().removeClass("parent-on");
+						//		target.parent().addClass("off");
+						//		target.next()[0].pause();
+						//		$($(target).next()).removeClass("saturate");
+						//	}, 10000);
+						//}
 					});
 				}
 				target.parent().removeClass("off");
@@ -155,23 +160,19 @@ define([
 
 
 			var data = _.map(this.collection.toJSON(), function(actor) {
-				var paragraphs = actor.fulltext.split('\n');
-				var excerptparagraphs = actor.excerpt.split('\n');
+				//var excerptparagraphs = actor.caption.split('\n');
+                //
+				//actor.caption = _.filter(excerptparagraphs, function(paragraph) {
+				//	return paragraph.length > 5;
+				//});
 
-				actor.fulltext = _.filter(paragraphs, function(paragraph) {
-					return paragraph.length > 5;
-				});
-
-				actor.excerpt = _.filter(excerptparagraphs, function(paragraph) {
-					return paragraph.length > 5;
-				});
 				return actor;
 			});
 
 			var furniture = {
-				title: "<b>100</b> <span><i>years <em>of</em></i></span> <b>Anzac</b> ",
+				title: "<b>100</b> <span>years <em>of</em></span> <b>Anzac</b> ",
 				subtitle: "Gallopli then and now.",
-				standfirst: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				standfirst: "Another dawn bruises the sky behind the Sphinx. There have been more than 36,000 sunrises since the events of 25 April 1915. The stillness today, as then, is broken only by the sound of water gently lapping the shore at Ari Burnu. Against a moonless backdrop, it's not hard to conjure a vision of the covering Anzac force approaching in complete darkness. <p> As the firing increased and the boats grounded, the original Anzacs staggered into battle on rocky footings, weighed down with heavy packs and wet clothing. Ahead lay the impossible scramble up steep hills to the heights they would get to know so intimately. Ahead, also, was that deadly dance of bravery, madness and fear that characterised the confused fighting of the first days at Gallipoli. </p><p> The story of the next 240 days was heat, cold, disease, flies and death. In all, 8,709 Australians and 2,701 New Zealanders perished. The number of Turkish dead and wounded across the peninsular is estimated at over 150,000. The records left to us from the cameras of journalists Charles Bean and Phillip Schuler – and from individual soldiers with their vest pocket cameras – remains an invaluable resource in telling the Anzac story. </p><p> While the debris of the conflict has rotted and rusted, and the hills have eroded onto the beaches of Anzac Cove, many of the natural features have remained. Changed, yes, but still very recognisable. </p><p> To honour all those who fought in and documented the war, Guardian photographer Mike Bowers travelled to Gallipoli and located the exact places where some of the iconic images of the campaign were taken a century ago. </p> "
 			};
 			var title = furniture.title;
 			var subtitle = furniture.subtitle;
@@ -214,7 +215,7 @@ define([
 				video: (screenSize == "big" ? true : false),
 				image: (screenSize != "big" ? true : false)
 			};
-
+			console.log(templateData);
 			this.$el.html(Mustache.render(template, templateData));
 			this.$el.find(".before-image").on("load", function(e){
 				e.target.style.visibility = "visible";
