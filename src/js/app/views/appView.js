@@ -5,7 +5,9 @@ define([
 	'text!templates/appTemplate.html',
 	'underscore',
 	'views/analytics',
-	'lazyload'
+	'lazyload',
+	'mediaelement',
+	'jquery'
 ], function(
 	Backbone,
 	Mustache,
@@ -13,7 +15,9 @@ define([
 	template,
 	_,
 	ga,
-	lazy
+	lazy,
+	mediaelement,
+	jquery
 ) {
 	'use strict';
 	var timer;
@@ -105,42 +109,42 @@ define([
 			});
 		},
 		handleBeforeImageClick: function(e) {
-			var target = $(e.target)
-
+			e.preventDefault();
+			var target = $(e.target);
+			var _me;
 			if (target.hasClass("on")) {
 				target.removeClass("on");
+
 				timer = setTimeout(function() {
+					target.parent().removeClass("playing");
 					target.parent().removeClass("parent-on");
 					target.parent().addClass("off");
 					if (target.next()[0].pause) {
-						target.next()[0].pause();
+						_me.pause();
 					}
 
 				}, 10000);
 			} else {
 				clearTimeout(timer);
-				if (target.next()[0].play) {
-					target.next()[0].play();
-					setTimeout(function(){
-						$($(target).next()).addClass("saturate");
-					}, 10000);
+				var id = $(target).parent().find("video")[0].getAttribute("id")
+				if (document.getElementById(id).play) {
+					target.parent().addClass("parent-on");
 
-					target.next()[0].addEventListener("progress", function(e){
+					_me = new MediaElementPlayer(document.getElementById(id), {loop: true, defaultVideoWidth: "100%", enableAutosize: false });
+					_me.setSrc("http://video.web.labs.theguardian.com/"+id+".mp4");
+					_me.play();
 
-						//if(e.srcElement.currentTime >= 25){
-						//	target.removeClass("on");
-						//	timer = setTimeout(function() {
-						//		target.parent().removeClass("parent-on");
-						//		target.parent().addClass("off");
-						//		target.next()[0].pause();
-						//		$($(target).next()).removeClass("saturate");
-						//	}, 10000);
-						//}
-					});
+					var p = document.getElementById(id);
+
+						p.addEventListener('playing', function(event){
+							target.parent().addClass("playing");
+						target.parent().removeClass("off");
+						target.addClass("on");
+					})
+
+
 				}
-				target.parent().removeClass("off");
-				target.parent().addClass("parent-on");
-				target.addClass("on");
+
 
 			}
 		},
@@ -215,7 +219,7 @@ define([
 				video: (screenSize == "big" ? true : false),
 				image: (screenSize != "big" ? true : false)
 			};
-			console.log(templateData);
+
 			this.$el.html(Mustache.render(template, templateData));
 			this.$el.find(".before-image").on("load", function(e){
 				e.target.style.visibility = "visible";
@@ -225,6 +229,15 @@ define([
 				$(e.target).next().css("opacity", 0);
 			})
 			this.lazyLoad();
+			$('video').each(function(video){
+				//new MediaElement(this.getAttribute("id"), {loop: true, success: function(me) {
+				//	me.play();
+				//	me.addEventListener('playing', function(){
+				//		//target.parent().removeClass("off");
+				//		//target.addClass("on");
+				//	});
+				//}});
+			});
 			return this;
 		}
 	});

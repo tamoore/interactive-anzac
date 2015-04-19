@@ -2,17 +2,16 @@ define([
 	'backbone',
 	'collections/sheetCollection',
 	'views/appView',
-	'iframeMessenger',
-	'./frame'
+	'iframeMessenger'
 ], function(
 	Backbone,
 	SheetCollection,
 	AppView,
-	iframeMessenger,
-	frame
+	iframeMessenger
+
 ) {
 	'use strict';
-	frame.boot();
+
 
 	var appView;
 

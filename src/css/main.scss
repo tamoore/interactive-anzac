@@ -9,11 +9,14 @@ $guss-webfonts-base-url: '//pasteup.guim.co.uk/fonts/';
 @import 'bower_components/pasteup-palette/src/_palette';
 @import 'bower_components/guss-webfonts/src/_webfonts.scss';
 @import 'bower_components/guss-typography/_typography.scss';
+@import 'bower_components/sass-mq/_mq.scss';
 
 @import 'partials/reset';
 @import 'partials/fonts';
 
+@import 'partials/logo';
 @import 'site';
+@import 'cover';
 @include guss-webfonts();
 @include guss-typography-defaults;
 

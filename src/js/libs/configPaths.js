@@ -12,6 +12,7 @@ require.config({
       'd3'              : '../libs/d3',
       'mustache'        : '../libs/mustache',
       'iframeMessenger' : '../libs/iframeMessenger',
+       'mediaelement' : '../libs/mediaelement.min',
       'lazyload' : '../libs/lazyload'
    },
    shims: {

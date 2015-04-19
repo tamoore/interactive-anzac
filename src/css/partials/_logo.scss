@@ -1,0 +1,54 @@
+#logo {
+  margin: 50px auto;
+  width: 38px;
+}
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq($from: desktop){
+    min-height: 650px;
+  }
+  position: relative;
+  z-index: 1000;
+
+}
+.logo {
+  fill: #FFF;
+}
+
+.clip {
+  -webkit-animation: slide 2.5s infinite;
+  animation: slide 2.5s infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateY(-135px);
+    transform: translateY(-135px);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  to {
+    -webkit-transform: translateY(-135px);
+    transform: translateY(-135px);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateY(-135px);
+    transform: translateY(-135px);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  to {
+    -webkit-transform: translateY(-135px);
+    transform: translateY(-135px);
+  }
+}
