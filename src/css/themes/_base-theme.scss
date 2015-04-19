@@ -1,0 +1,41 @@
+@import "base-theme-variables";
+@import "../base/base";
+
+@import '../utils/color-contrast';
+@import '../utils/color';
+@import '../utils/filters'; 
+
+//Layout
+@import '../layout/layout';
+
+// Components
+@import '../components/wrapp';
+@import '../components/cover/cover';
+@import '../components/cover/cover-title';
+@import '../components/cover/cover-stand-first';
+@import '../components/cover/cover-byline';
+@import '../components/cover/cover-poster';
+
+.Wrapp{
+	@extend %Wrapp;
+}
+.Cover {
+   	@extend %Cover;
+   	@include background(linear-gradient(rgba($coverBackground,.7), rgba($coverBackground,.7)), url($Cover--background-image));
+   	background-size: cover;
+   	background-position: -150px center;
+}
+.CoverTitle {
+	@extend %CoverTitle;
+}
+.CoverStandFirst {
+	@extend %CoverStandFirst;
+	line-height: 1.1;
+}
+.CoverByLine {
+	@extend %CoverByLine;
+}
+.CoverPoster {
+	@extend %CoverPoster;
+} 
+

@@ -1,0 +1,54 @@
+$desktop: 'desktop';
+
+
+
+/// Container: Wrapper for Neat OuterContainer 
+/// 
+@at-root {
+	[data-layout=Container] {
+		@include outer-container();
+	}
+}
+@for $i from 1 through $grid-columns {
+	[data-layout-desktop="#{$i}"] {  
+		@include span-columns($i);
+	}
+	[data-layout-tablet="#{$i}"] {  
+		@include mq($until: desktop) { 
+			@include span-columns($i);
+		}
+	}
+	[data-layout-mobile="#{$i}"] {  
+		@include mq($until: tablet) { 
+			@include span-columns($i);
+		}
+	}
+	
+	[data-layout-mobile-shift="-#{$i}"]{
+		@include shift($i); 
+	}
+	[data-layout-tablet-shift="-#{$i}"]{
+		@include mq($from: tablet) { 
+			@include shift($i); 
+		}
+	}
+	[data-layout-desktop-shift="-#{$i}"]{
+		@include mq($from: desktop) { 
+			@include shift($i); 
+		}
+	} 
+}
+
+box, layout, row {
+	display: block;
+}
+row {
+	@include row();
+}
+[data-box-type=CoverBox]{
+	@include pad(3rem);
+}
+
+
+
+

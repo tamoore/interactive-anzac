@@ -1,0 +1,57 @@
+@import './cover';
+@import './cover-title';
+
+////
+/// _standfirst.scss 
+/// Defines the standfirst styles
+/// 
+/// @author  Todd Moore
+///
+/// @requires  cover, cover-title
+////
+
+/// Stand First font-size 
+/// 
+/// @type  String
+$CoverStandFirst--font-size: $CoverTitle--font-size * .6 !default;
+
+/// Stand First Weight
+/// @type String
+$CoverStandFirst--font-weight: $CoverTitle--font-weight / 2!default;
+
+/// Margin top
+/// To increase the spacing after the title 
+/// 
+/// @type  String
+$CoverStandFirst-margin-top: 2rem !default;
+
+// CoverStandFirst Color
+// @type String
+$CoverStandFirst--color: null !default;
+
+/// Border bottom 
+/// 
+/// @type  String
+$CoverStandFirst--borderbottom: 1px solid !default;
+
+/// Border Color 
+/// 
+/// @type  String
+$CoverStandFirst--border-color: null !default;
+
+/// Padding Bottom 
+/// 
+/// @type  String
+$CoverStandFirst--padding-bottom: 1rem !default;
+
+
+%CoverStandFirst {
+	@extend %CoverTitle;
+	@include returnContrastedProperty($Cover--background-color, $CoverStandFirst--color, color, lighten($dark-text-default, $lighten-percentage),  darken($light-text-default, $darken-percentage));
+	font-size: $CoverStandFirst--font-size;
+	font-weight: $CoverStandFirst--font-weight;
+	margin-top: convert-to-px($CoverStandFirst-margin-top); 
+	border-bottom: $CoverStandFirst--borderbottom;
+	padding-bottom: $CoverStandFirst--padding-bottom;
+	@include returnContrastedProperty($Cover--background-color, $CoverStandFirst--border-color, border-color, lighten($dark-text-default, $lighten-percentage),  darken($light-text-default, $darken-percentage));;
+}

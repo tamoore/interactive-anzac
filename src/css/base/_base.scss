@@ -1,0 +1,46 @@
+$guss-webfonts-base-url: '//pasteup.guim.co.uk/fonts/';
+$gs-baseline: 12px;
+$gs-gutter: 20px;
+$body-background: #fff !default;
+// Vendor
+
+@import '../../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../../../bower_components/neat/app/assets/stylesheets/_neat';
+@import '../../../bower_components/fontawesome/scss/font-awesome';
+@import '../../../bower_components/sass-mq/_mq';
+@import '../../../bower_components/guss-css3/_css3';
+@import '../../../bower_components/guss-rem/_rem';
+@import '../../../bower_components/guss-grid-system/_grid-system';
+@import '../../../bower_components/guss-layout/_row';
+@import '../../../bower_components/guss-layout/_columns';
+@import '../../../bower_components/guss-typography/_typography';
+@import '../../../bower_components/guss-colours/_colours';
+@import '../../../bower_components/guss-webfonts/src/_webfonts';
+
+// Includes
+@include guss-webfonts();
+@include guss-typography-defaults;
+
+// Base Styles
+html{
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+  background: $body-background;
+}
+.interactive {
+  margin: 0;
+}
+a {
+	color: $defaultAnchorColor;
+	text-decoration: none;
+}
+p {
+	font-size: 1.6rem;
+}
+
+
+
+

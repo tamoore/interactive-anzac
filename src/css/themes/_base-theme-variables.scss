@@ -1,0 +1,45 @@
+@import '../../../bower_components/pasteup-palette/src/_palette';
+
+// init variables
+$body-background: #000;
+$coverText: null;
+$coverBackground: #1a1a1a; 
+$defaultAnchorColor: guss-color("guardian-brand");
+
+/// Neat Variables [http://thoughtbot.github.io/neat-docs]
+/// 
+/// @type  String
+$max-width: 1200px;
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+// Lighten and Darken Contrast
+$darken-percentage: 25%;
+$lighten-percentage: 0%;
+
+//Constrain Wrapp
+//$Wrapp-constrain : false
+$Wrapp-constrain: true;
+
+// Cover Background Color
+// guss-color("features-support-3")
+$Cover--background-color: $coverBackground;
+
+//Cover background Image
+//$Cover--background-image: 'http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg';
+$Cover--paddingtop: 2rem;
+
+// Anchor Default
+$Cover--anchor-default: false;
+
+// CoverTitle Color
+$CoverTitle--color: $coverText;
+
+//CoverTitle border
+$CoverTitle--borderbottom: none;
+
+//Stand first text color
+$CoverStandFirst--color: $coverText;
+$CoverStandFirst--font-size: 3rem;

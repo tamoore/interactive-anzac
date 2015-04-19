@@ -1,0 +1,6 @@
+/// Returns a particular pasteup color 
+/// 
+/// @color name
+@function guss-color($color){
+	@return map_get($pasteup-palette, $color);
+}  

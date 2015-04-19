@@ -16,7 +16,7 @@ $guss-webfonts-base-url: '//pasteup.guim.co.uk/fonts/';
 
 @import 'partials/logo';
 @import 'site';
-@import 'cover';
+@import 'themes/base-theme';
 @include guss-webfonts();
 @include guss-typography-defaults;
 

@@ -1,0 +1,61 @@
+@import './cover';
+
+////
+/// _cover-title.scss 
+/// Responsible for creating the cover titles
+/// 
+/// @author  Todd Moore	
+/// @group Cover
+/// @require fs-headline
+////
+
+/// Color 
+/// 
+/// @type  String
+$CoverTitle--color: null !default;
+
+/// CoverTitle Margin 
+/// 
+/// @type  String
+$CoverTitle--margin: 0 0rem !default;
+
+/// CoverTitle Font Size 
+/// 
+/// @type  String
+$CoverTitle--font-size: 6rem !default;
+
+/// Font Family 
+/// 
+/// @type  String
+$CoverTitle--fontfamily: null !default;
+ 
+/// Line Height 
+/// 
+/// @type  String 
+$CoverTitle--line-height: 1 !default;
+
+/// Font-weight 
+/// 
+/// @type  String
+$CoverTitle--font-weight: 600 !default;
+
+/// Border bottom 
+/// 
+/// @type  String
+$CoverTitle--borderbottom: 1px solid !default;
+
+/// Border Color 
+/// 
+/// @type  String
+$CoverTitle--bordercolor: null !default;
+
+%CoverTitle {
+  @include returnContrastedProperty($Cover--background-color, $CoverTitle--color, color);
+  margin: $CoverTitle--margin;
+  font-size: convert-to-px($CoverTitle--font-size);
+  font-family: $CoverTitle--fontfamily;
+  line-height: $CoverTitle--line-height;
+  font-weight: $CoverTitle--font-weight;
+  border-bottom: $CoverTitle--borderbottom;
+  @include returnContrastedProperty($Cover--background-color, $CoverTitle--bordercolor, border-color);
+} 

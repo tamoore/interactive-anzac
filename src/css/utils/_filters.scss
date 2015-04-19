@@ -1,0 +1,6 @@
+.grayscale {
+	@include filter(grayscale(100%));
+} 
+.blur {
+	@include filter(blur(250%));
+} 

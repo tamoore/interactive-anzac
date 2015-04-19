@@ -1,0 +1,112 @@
+////
+/// _cover.scss 
+/// Handles a magazine initial cover
+/// 
+/// @author  Todd Moore
+/// @group Cover
+///
+////
+
+/// Sets the background color 
+/// 
+/// @type  String
+$Cover--background-color: #333 !default;
+
+/// Sets the background image
+/// 
+/// @type  String
+$Cover--background-image: none !default;
+
+/// Sets the background size of a cover 
+/// 
+/// @type  String
+$Cover--background-size: cover !default;
+
+/// Sets the background position 
+/// 
+/// @type  String
+$Cover--background-position: center center !default;
+
+/// Sets the display  of a cover
+/// 
+/// @type  String
+$Cover--display: flex !default;
+
+/// Sets the algin items in flex specification 
+/// 
+/// @type  String
+$Cover--align-items: flex-start !default;
+
+/// Sets the justify content of flex spec 
+/// 
+/// @type  String
+$Cover--justify-content: flex-start !default;
+
+/// Width 
+/// 
+/// @type  String
+$Cover--width: 100% !default;
+
+/// Height 
+/// 
+/// @type  String
+$Cover--height: 100vh !default;
+
+/// Min Height 
+/// 
+/// @type  String
+$Cover--min-height: 100vh !default;
+
+/// Padding top 
+/// 
+/// @type  String
+$Cover--paddingtop: 5rem !default;
+
+/// Box Sizing 
+/// 
+/// @type  String
+$Cover--box-sizing: content-box !default;
+
+/// Set whether you want an anchor to match the default styles or blend depending on constrast
+/// adds text decoration if the later
+/// 
+/// @type  String
+$Cover--anchor-default: true !default;
+
+// Multiple background
+// @type Bool
+$Cover--multiple-background: null !default;
+
+/// Symbol for extending Cover 
+@at-root {
+  %Cover {
+    background-color: $Cover--background-color;
+    background-image: url($Cover--background-image);
+    @if $Cover--multiple-background{
+        background: $Cover--background-1, $Cover--background-2;
+    }
+    background-size: $Cover--background-size;
+    background-position: $Cover--background-position;
+    display: $Cover--display;
+    align-items: $Cover--align-items;
+    justify-content: $Cover--justify-content;
+    width: $Cover--width;
+    //height: calc(#{$Cover--height} - #{$Cover--paddingtop});
+    min-height: calc(#{$Cover--min-height} - #{$Cover--paddingtop});
+    padding-top: $Cover--paddingtop;
+    box-sizing: $Cover--box-sizing;
+    a {
+        @if $Cover--anchor-default {
+            color: $defaultAnchorColor;
+        }
+        @else {
+            color: color-contrast($Cover--background-color);
+            text-decoration: underline;
+        }
+        
+    }
+    p {
+        color: color-contrast($Cover--background-color);
+    }
+  }
+}

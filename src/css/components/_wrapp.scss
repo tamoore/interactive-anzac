@@ -1,0 +1,37 @@
+////
+/// _wrapp.scss 
+/// Used to maximally constrain vertical plane to
+/// 1200px wide
+/// 
+/// @author  Todd Moore
+/// @group Wrapp
+///
+/// @requires  'none'
+////
+
+/// Maxium Width 
+/// 
+/// @type  String
+$Wrapp-maxwidth: 1200px !default;
+
+$Wrapp-constrain: true !default;
+
+@function constrain(){
+	@if $Wrapp-constrain == true{
+		@return $Wrapp-maxwidth;
+	}
+	@else {
+		@return null;
+	}
+}
+
+
+/// Margin 
+/// 
+/// @type  String
+$Wrapp-margin: 0 auto !default;
+%Wrapp {
+	max-width: constrain();
+	margin: $Wrapp-margin;
+}
+

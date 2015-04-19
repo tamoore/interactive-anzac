@@ -1,0 +1,27 @@
+@import './cover';
+////
+/// _cover-byline.scss 
+/// Handles Styles for the cover byline
+/// 
+/// @author  Todd Moore
+/// 
+/// @requires cover
+////
+
+/// ByLineColor 
+/// 
+/// @type  String
+$CoverByLine--color: null !default;
+
+%CoverByLine {
+	margin-bottom: 0;
+    @include fs-bodyHeading(1);
+    margin-top: 0;
+    padding-top: 1rem;
+    line-height: 20px;
+    color: guss-color(neutral-2);	
+    &:before {
+    	content: "by ";
+    	@include returnContrastedProperty($Cover--background-color, $CoverByLine--color, color);
+    }
+}
