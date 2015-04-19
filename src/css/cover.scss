@@ -1,0 +1,3754 @@
+@charset "UTF-8";
+/**
+ * Default colour palette
+ *
+ * @type Map
+ *
+ * @group colours
+ */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+  .fa-li.fa-lg {
+    left: -1.85714em; }
+
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.fa.pull-left {
+  margin-right: .3em; }
+.fa.pull-right {
+  margin-left: .3em; }
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none; }
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.fa-stack-1x {
+  line-height: inherit; }
+
+.fa-stack-2x {
+  font-size: 2em; }
+
+.fa-inverse {
+  color: #fff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-glass:before {
+  content: ""; }
+
+.fa-music:before {
+  content: ""; }
+
+.fa-search:before {
+  content: ""; }
+
+.fa-envelope-o:before {
+  content: ""; }
+
+.fa-heart:before {
+  content: ""; }
+
+.fa-star:before {
+  content: ""; }
+
+.fa-star-o:before {
+  content: ""; }
+
+.fa-user:before {
+  content: ""; }
+
+.fa-film:before {
+  content: ""; }
+
+.fa-th-large:before {
+  content: ""; }
+
+.fa-th:before {
+  content: ""; }
+
+.fa-th-list:before {
+  content: ""; }
+
+.fa-check:before {
+  content: ""; }
+
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: ""; }
+
+.fa-search-plus:before {
+  content: ""; }
+
+.fa-search-minus:before {
+  content: ""; }
+
+.fa-power-off:before {
+  content: ""; }
+
+.fa-signal:before {
+  content: ""; }
+
+.fa-gear:before,
+.fa-cog:before {
+  content: ""; }
+
+.fa-trash-o:before {
+  content: ""; }
+
+.fa-home:before {
+  content: ""; }
+
+.fa-file-o:before {
+  content: ""; }
+
+.fa-clock-o:before {
+  content: ""; }
+
+.fa-road:before {
+  content: ""; }
+
+.fa-download:before {
+  content: ""; }
+
+.fa-arrow-circle-o-down:before {
+  content: ""; }
+
+.fa-arrow-circle-o-up:before {
+  content: ""; }
+
+.fa-inbox:before {
+  content: ""; }
+
+.fa-play-circle-o:before {
+  content: ""; }
+
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: ""; }
+
+.fa-refresh:before {
+  content: ""; }
+
+.fa-list-alt:before {
+  content: ""; }
+
+.fa-lock:before {
+  content: ""; }
+
+.fa-flag:before {
+  content: ""; }
+
+.fa-headphones:before {
+  content: ""; }
+
+.fa-volume-off:before {
+  content: ""; }
+
+.fa-volume-down:before {
+  content: ""; }
+
+.fa-volume-up:before {
+  content: ""; }
+
+.fa-qrcode:before {
+  content: ""; }
+
+.fa-barcode:before {
+  content: ""; }
+
+.fa-tag:before {
+  content: ""; }
+
+.fa-tags:before {
+  content: ""; }
+
+.fa-book:before {
+  content: ""; }
+
+.fa-bookmark:before {
+  content: ""; }
+
+.fa-print:before {
+  content: ""; }
+
+.fa-camera:before {
+  content: ""; }
+
+.fa-font:before {
+  content: ""; }
+
+.fa-bold:before {
+  content: ""; }
+
+.fa-italic:before {
+  content: ""; }
+
+.fa-text-height:before {
+  content: ""; }
+
+.fa-text-width:before {
+  content: ""; }
+
+.fa-align-left:before {
+  content: ""; }
+
+.fa-align-center:before {
+  content: ""; }
+
+.fa-align-right:before {
+  content: ""; }
+
+.fa-align-justify:before {
+  content: ""; }
+
+.fa-list:before {
+  content: ""; }
+
+.fa-dedent:before,
+.fa-outdent:before {
+  content: ""; }
+
+.fa-indent:before {
+  content: ""; }
+
+.fa-video-camera:before {
+  content: ""; }
+
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: ""; }
+
+.fa-pencil:before {
+  content: ""; }
+
+.fa-map-marker:before {
+  content: ""; }
+
+.fa-adjust:before {
+  content: ""; }
+
+.fa-tint:before {
+  content: ""; }
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: ""; }
+
+.fa-share-square-o:before {
+  content: ""; }
+
+.fa-check-square-o:before {
+  content: ""; }
+
+.fa-arrows:before {
+  content: ""; }
+
+.fa-step-backward:before {
+  content: ""; }
+
+.fa-fast-backward:before {
+  content: ""; }
+
+.fa-backward:before {
+  content: ""; }
+
+.fa-play:before {
+  content: ""; }
+
+.fa-pause:before {
+  content: ""; }
+
+.fa-stop:before {
+  content: ""; }
+
+.fa-forward:before {
+  content: ""; }
+
+.fa-fast-forward:before {
+  content: ""; }
+
+.fa-step-forward:before {
+  content: ""; }
+
+.fa-eject:before {
+  content: ""; }
+
+.fa-chevron-left:before {
+  content: ""; }
+
+.fa-chevron-right:before {
+  content: ""; }
+
+.fa-plus-circle:before {
+  content: ""; }
+
+.fa-minus-circle:before {
+  content: ""; }
+
+.fa-times-circle:before {
+  content: ""; }
+
+.fa-check-circle:before {
+  content: ""; }
+
+.fa-question-circle:before {
+  content: ""; }
+
+.fa-info-circle:before {
+  content: ""; }
+
+.fa-crosshairs:before {
+  content: ""; }
+
+.fa-times-circle-o:before {
+  content: ""; }
+
+.fa-check-circle-o:before {
+  content: ""; }
+
+.fa-ban:before {
+  content: ""; }
+
+.fa-arrow-left:before {
+  content: ""; }
+
+.fa-arrow-right:before {
+  content: ""; }
+
+.fa-arrow-up:before {
+  content: ""; }
+
+.fa-arrow-down:before {
+  content: ""; }
+
+.fa-mail-forward:before,
+.fa-share:before {
+  content: ""; }
+
+.fa-expand:before {
+  content: ""; }
+
+.fa-compress:before {
+  content: ""; }
+
+.fa-plus:before {
+  content: ""; }
+
+.fa-minus:before {
+  content: ""; }
+
+.fa-asterisk:before {
+  content: ""; }
+
+.fa-exclamation-circle:before {
+  content: ""; }
+
+.fa-gift:before {
+  content: ""; }
+
+.fa-leaf:before {
+  content: ""; }
+
+.fa-fire:before {
+  content: ""; }
+
+.fa-eye:before {
+  content: ""; }
+
+.fa-eye-slash:before {
+  content: ""; }
+
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: ""; }
+
+.fa-plane:before {
+  content: ""; }
+
+.fa-calendar:before {
+  content: ""; }
+
+.fa-random:before {
+  content: ""; }
+
+.fa-comment:before {
+  content: ""; }
+
+.fa-magnet:before {
+  content: ""; }
+
+.fa-chevron-up:before {
+  content: ""; }
+
+.fa-chevron-down:before {
+  content: ""; }
+
+.fa-retweet:before {
+  content: ""; }
+
+.fa-shopping-cart:before {
+  content: ""; }
+
+.fa-folder:before {
+  content: ""; }
+
+.fa-folder-open:before {
+  content: ""; }
+
+.fa-arrows-v:before {
+  content: ""; }
+
+.fa-arrows-h:before {
+  content: ""; }
+
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: ""; }
+
+.fa-twitter-square:before {
+  content: ""; }
+
+.fa-facebook-square:before {
+  content: ""; }
+
+.fa-camera-retro:before {
+  content: ""; }
+
+.fa-key:before {
+  content: ""; }
+
+.fa-gears:before,
+.fa-cogs:before {
+  content: ""; }
+
+.fa-comments:before {
+  content: ""; }
+
+.fa-thumbs-o-up:before {
+  content: ""; }
+
+.fa-thumbs-o-down:before {
+  content: ""; }
+
+.fa-star-half:before {
+  content: ""; }
+
+.fa-heart-o:before {
+  content: ""; }
+
+.fa-sign-out:before {
+  content: ""; }
+
+.fa-linkedin-square:before {
+  content: ""; }
+
+.fa-thumb-tack:before {
+  content: ""; }
+
+.fa-external-link:before {
+  content: ""; }
+
+.fa-sign-in:before {
+  content: ""; }
+
+.fa-trophy:before {
+  content: ""; }
+
+.fa-github-square:before {
+  content: ""; }
+
+.fa-upload:before {
+  content: ""; }
+
+.fa-lemon-o:before {
+  content: ""; }
+
+.fa-phone:before {
+  content: ""; }
+
+.fa-square-o:before {
+  content: ""; }
+
+.fa-bookmark-o:before {
+  content: ""; }
+
+.fa-phone-square:before {
+  content: ""; }
+
+.fa-twitter:before {
+  content: ""; }
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: ""; }
+
+.fa-github:before {
+  content: ""; }
+
+.fa-unlock:before {
+  content: ""; }
+
+.fa-credit-card:before {
+  content: ""; }
+
+.fa-rss:before {
+  content: ""; }
+
+.fa-hdd-o:before {
+  content: ""; }
+
+.fa-bullhorn:before {
+  content: ""; }
+
+.fa-bell:before {
+  content: ""; }
+
+.fa-certificate:before {
+  content: ""; }
+
+.fa-hand-o-right:before {
+  content: ""; }
+
+.fa-hand-o-left:before {
+  content: ""; }
+
+.fa-hand-o-up:before {
+  content: ""; }
+
+.fa-hand-o-down:before {
+  content: ""; }
+
+.fa-arrow-circle-left:before {
+  content: ""; }
+
+.fa-arrow-circle-right:before {
+  content: ""; }
+
+.fa-arrow-circle-up:before {
+  content: ""; }
+
+.fa-arrow-circle-down:before {
+  content: ""; }
+
+.fa-globe:before {
+  content: ""; }
+
+.fa-wrench:before {
+  content: ""; }
+
+.fa-tasks:before {
+  content: ""; }
+
+.fa-filter:before {
+  content: ""; }
+
+.fa-briefcase:before {
+  content: ""; }
+
+.fa-arrows-alt:before {
+  content: ""; }
+
+.fa-group:before,
+.fa-users:before {
+  content: ""; }
+
+.fa-chain:before,
+.fa-link:before {
+  content: ""; }
+
+.fa-cloud:before {
+  content: ""; }
+
+.fa-flask:before {
+  content: ""; }
+
+.fa-cut:before,
+.fa-scissors:before {
+  content: ""; }
+
+.fa-copy:before,
+.fa-files-o:before {
+  content: ""; }
+
+.fa-paperclip:before {
+  content: ""; }
+
+.fa-save:before,
+.fa-floppy-o:before {
+  content: ""; }
+
+.fa-square:before {
+  content: ""; }
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: ""; }
+
+.fa-list-ul:before {
+  content: ""; }
+
+.fa-list-ol:before {
+  content: ""; }
+
+.fa-strikethrough:before {
+  content: ""; }
+
+.fa-underline:before {
+  content: ""; }
+
+.fa-table:before {
+  content: ""; }
+
+.fa-magic:before {
+  content: ""; }
+
+.fa-truck:before {
+  content: ""; }
+
+.fa-pinterest:before {
+  content: ""; }
+
+.fa-pinterest-square:before {
+  content: ""; }
+
+.fa-google-plus-square:before {
+  content: ""; }
+
+.fa-google-plus:before {
+  content: ""; }
+
+.fa-money:before {
+  content: ""; }
+
+.fa-caret-down:before {
+  content: ""; }
+
+.fa-caret-up:before {
+  content: ""; }
+
+.fa-caret-left:before {
+  content: ""; }
+
+.fa-caret-right:before {
+  content: ""; }
+
+.fa-columns:before {
+  content: ""; }
+
+.fa-unsorted:before,
+.fa-sort:before {
+  content: ""; }
+
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: ""; }
+
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: ""; }
+
+.fa-envelope:before {
+  content: ""; }
+
+.fa-linkedin:before {
+  content: ""; }
+
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: ""; }
+
+.fa-legal:before,
+.fa-gavel:before {
+  content: ""; }
+
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: ""; }
+
+.fa-comment-o:before {
+  content: ""; }
+
+.fa-comments-o:before {
+  content: ""; }
+
+.fa-flash:before,
+.fa-bolt:before {
+  content: ""; }
+
+.fa-sitemap:before {
+  content: ""; }
+
+.fa-umbrella:before {
+  content: ""; }
+
+.fa-paste:before,
+.fa-clipboard:before {
+  content: ""; }
+
+.fa-lightbulb-o:before {
+  content: ""; }
+
+.fa-exchange:before {
+  content: ""; }
+
+.fa-cloud-download:before {
+  content: ""; }
+
+.fa-cloud-upload:before {
+  content: ""; }
+
+.fa-user-md:before {
+  content: ""; }
+
+.fa-stethoscope:before {
+  content: ""; }
+
+.fa-suitcase:before {
+  content: ""; }
+
+.fa-bell-o:before {
+  content: ""; }
+
+.fa-coffee:before {
+  content: ""; }
+
+.fa-cutlery:before {
+  content: ""; }
+
+.fa-file-text-o:before {
+  content: ""; }
+
+.fa-building-o:before {
+  content: ""; }
+
+.fa-hospital-o:before {
+  content: ""; }
+
+.fa-ambulance:before {
+  content: ""; }
+
+.fa-medkit:before {
+  content: ""; }
+
+.fa-fighter-jet:before {
+  content: ""; }
+
+.fa-beer:before {
+  content: ""; }
+
+.fa-h-square:before {
+  content: ""; }
+
+.fa-plus-square:before {
+  content: ""; }
+
+.fa-angle-double-left:before {
+  content: ""; }
+
+.fa-angle-double-right:before {
+  content: ""; }
+
+.fa-angle-double-up:before {
+  content: ""; }
+
+.fa-angle-double-down:before {
+  content: ""; }
+
+.fa-angle-left:before {
+  content: ""; }
+
+.fa-angle-right:before {
+  content: ""; }
+
+.fa-angle-up:before {
+  content: ""; }
+
+.fa-angle-down:before {
+  content: ""; }
+
+.fa-desktop:before {
+  content: ""; }
+
+.fa-laptop:before {
+  content: ""; }
+
+.fa-tablet:before {
+  content: ""; }
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: ""; }
+
+.fa-circle-o:before {
+  content: ""; }
+
+.fa-quote-left:before {
+  content: ""; }
+
+.fa-quote-right:before {
+  content: ""; }
+
+.fa-spinner:before {
+  content: ""; }
+
+.fa-circle:before {
+  content: ""; }
+
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: ""; }
+
+.fa-github-alt:before {
+  content: ""; }
+
+.fa-folder-o:before {
+  content: ""; }
+
+.fa-folder-open-o:before {
+  content: ""; }
+
+.fa-smile-o:before {
+  content: ""; }
+
+.fa-frown-o:before {
+  content: ""; }
+
+.fa-meh-o:before {
+  content: ""; }
+
+.fa-gamepad:before {
+  content: ""; }
+
+.fa-keyboard-o:before {
+  content: ""; }
+
+.fa-flag-o:before {
+  content: ""; }
+
+.fa-flag-checkered:before {
+  content: ""; }
+
+.fa-terminal:before {
+  content: ""; }
+
+.fa-code:before {
+  content: ""; }
+
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: ""; }
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: ""; }
+
+.fa-location-arrow:before {
+  content: ""; }
+
+.fa-crop:before {
+  content: ""; }
+
+.fa-code-fork:before {
+  content: ""; }
+
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: ""; }
+
+.fa-question:before {
+  content: ""; }
+
+.fa-info:before {
+  content: ""; }
+
+.fa-exclamation:before {
+  content: ""; }
+
+.fa-superscript:before {
+  content: ""; }
+
+.fa-subscript:before {
+  content: ""; }
+
+.fa-eraser:before {
+  content: ""; }
+
+.fa-puzzle-piece:before {
+  content: ""; }
+
+.fa-microphone:before {
+  content: ""; }
+
+.fa-microphone-slash:before {
+  content: ""; }
+
+.fa-shield:before {
+  content: ""; }
+
+.fa-calendar-o:before {
+  content: ""; }
+
+.fa-fire-extinguisher:before {
+  content: ""; }
+
+.fa-rocket:before {
+  content: ""; }
+
+.fa-maxcdn:before {
+  content: ""; }
+
+.fa-chevron-circle-left:before {
+  content: ""; }
+
+.fa-chevron-circle-right:before {
+  content: ""; }
+
+.fa-chevron-circle-up:before {
+  content: ""; }
+
+.fa-chevron-circle-down:before {
+  content: ""; }
+
+.fa-html5:before {
+  content: ""; }
+
+.fa-css3:before {
+  content: ""; }
+
+.fa-anchor:before {
+  content: ""; }
+
+.fa-unlock-alt:before {
+  content: ""; }
+
+.fa-bullseye:before {
+  content: ""; }
+
+.fa-ellipsis-h:before {
+  content: ""; }
+
+.fa-ellipsis-v:before {
+  content: ""; }
+
+.fa-rss-square:before {
+  content: ""; }
+
+.fa-play-circle:before {
+  content: ""; }
+
+.fa-ticket:before {
+  content: ""; }
+
+.fa-minus-square:before {
+  content: ""; }
+
+.fa-minus-square-o:before {
+  content: ""; }
+
+.fa-level-up:before {
+  content: ""; }
+
+.fa-level-down:before {
+  content: ""; }
+
+.fa-check-square:before {
+  content: ""; }
+
+.fa-pencil-square:before {
+  content: ""; }
+
+.fa-external-link-square:before {
+  content: ""; }
+
+.fa-share-square:before {
+  content: ""; }
+
+.fa-compass:before {
+  content: ""; }
+
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: ""; }
+
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: ""; }
+
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: ""; }
+
+.fa-euro:before,
+.fa-eur:before {
+  content: ""; }
+
+.fa-gbp:before {
+  content: ""; }
+
+.fa-dollar:before,
+.fa-usd:before {
+  content: ""; }
+
+.fa-rupee:before,
+.fa-inr:before {
+  content: ""; }
+
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: ""; }
+
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: ""; }
+
+.fa-won:before,
+.fa-krw:before {
+  content: ""; }
+
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: ""; }
+
+.fa-file:before {
+  content: ""; }
+
+.fa-file-text:before {
+  content: ""; }
+
+.fa-sort-alpha-asc:before {
+  content: ""; }
+
+.fa-sort-alpha-desc:before {
+  content: ""; }
+
+.fa-sort-amount-asc:before {
+  content: ""; }
+
+.fa-sort-amount-desc:before {
+  content: ""; }
+
+.fa-sort-numeric-asc:before {
+  content: ""; }
+
+.fa-sort-numeric-desc:before {
+  content: ""; }
+
+.fa-thumbs-up:before {
+  content: ""; }
+
+.fa-thumbs-down:before {
+  content: ""; }
+
+.fa-youtube-square:before {
+  content: ""; }
+
+.fa-youtube:before {
+  content: ""; }
+
+.fa-xing:before {
+  content: ""; }
+
+.fa-xing-square:before {
+  content: ""; }
+
+.fa-youtube-play:before {
+  content: ""; }
+
+.fa-dropbox:before {
+  content: ""; }
+
+.fa-stack-overflow:before {
+  content: ""; }
+
+.fa-instagram:before {
+  content: ""; }
+
+.fa-flickr:before {
+  content: ""; }
+
+.fa-adn:before {
+  content: ""; }
+
+.fa-bitbucket:before {
+  content: ""; }
+
+.fa-bitbucket-square:before {
+  content: ""; }
+
+.fa-tumblr:before {
+  content: ""; }
+
+.fa-tumblr-square:before {
+  content: ""; }
+
+.fa-long-arrow-down:before {
+  content: ""; }
+
+.fa-long-arrow-up:before {
+  content: ""; }
+
+.fa-long-arrow-left:before {
+  content: ""; }
+
+.fa-long-arrow-right:before {
+  content: ""; }
+
+.fa-apple:before {
+  content: ""; }
+
+.fa-windows:before {
+  content: ""; }
+
+.fa-android:before {
+  content: ""; }
+
+.fa-linux:before {
+  content: ""; }
+
+.fa-dribbble:before {
+  content: ""; }
+
+.fa-skype:before {
+  content: ""; }
+
+.fa-foursquare:before {
+  content: ""; }
+
+.fa-trello:before {
+  content: ""; }
+
+.fa-female:before {
+  content: ""; }
+
+.fa-male:before {
+  content: ""; }
+
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: ""; }
+
+.fa-sun-o:before {
+  content: ""; }
+
+.fa-moon-o:before {
+  content: ""; }
+
+.fa-archive:before {
+  content: ""; }
+
+.fa-bug:before {
+  content: ""; }
+
+.fa-vk:before {
+  content: ""; }
+
+.fa-weibo:before {
+  content: ""; }
+
+.fa-renren:before {
+  content: ""; }
+
+.fa-pagelines:before {
+  content: ""; }
+
+.fa-stack-exchange:before {
+  content: ""; }
+
+.fa-arrow-circle-o-right:before {
+  content: ""; }
+
+.fa-arrow-circle-o-left:before {
+  content: ""; }
+
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: ""; }
+
+.fa-dot-circle-o:before {
+  content: ""; }
+
+.fa-wheelchair:before {
+  content: ""; }
+
+.fa-vimeo-square:before {
+  content: ""; }
+
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: ""; }
+
+.fa-plus-square-o:before {
+  content: ""; }
+
+.fa-space-shuttle:before {
+  content: ""; }
+
+.fa-slack:before {
+  content: ""; }
+
+.fa-envelope-square:before {
+  content: ""; }
+
+.fa-wordpress:before {
+  content: ""; }
+
+.fa-openid:before {
+  content: ""; }
+
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: ""; }
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: ""; }
+
+.fa-yahoo:before {
+  content: ""; }
+
+.fa-google:before {
+  content: ""; }
+
+.fa-reddit:before {
+  content: ""; }
+
+.fa-reddit-square:before {
+  content: ""; }
+
+.fa-stumbleupon-circle:before {
+  content: ""; }
+
+.fa-stumbleupon:before {
+  content: ""; }
+
+.fa-delicious:before {
+  content: ""; }
+
+.fa-digg:before {
+  content: ""; }
+
+.fa-pied-piper:before {
+  content: ""; }
+
+.fa-pied-piper-alt:before {
+  content: ""; }
+
+.fa-drupal:before {
+  content: ""; }
+
+.fa-joomla:before {
+  content: ""; }
+
+.fa-language:before {
+  content: ""; }
+
+.fa-fax:before {
+  content: ""; }
+
+.fa-building:before {
+  content: ""; }
+
+.fa-child:before {
+  content: ""; }
+
+.fa-paw:before {
+  content: ""; }
+
+.fa-spoon:before {
+  content: ""; }
+
+.fa-cube:before {
+  content: ""; }
+
+.fa-cubes:before {
+  content: ""; }
+
+.fa-behance:before {
+  content: ""; }
+
+.fa-behance-square:before {
+  content: ""; }
+
+.fa-steam:before {
+  content: ""; }
+
+.fa-steam-square:before {
+  content: ""; }
+
+.fa-recycle:before {
+  content: ""; }
+
+.fa-automobile:before,
+.fa-car:before {
+  content: ""; }
+
+.fa-cab:before,
+.fa-taxi:before {
+  content: ""; }
+
+.fa-tree:before {
+  content: ""; }
+
+.fa-spotify:before {
+  content: ""; }
+
+.fa-deviantart:before {
+  content: ""; }
+
+.fa-soundcloud:before {
+  content: ""; }
+
+.fa-database:before {
+  content: ""; }
+
+.fa-file-pdf-o:before {
+  content: ""; }
+
+.fa-file-word-o:before {
+  content: ""; }
+
+.fa-file-excel-o:before {
+  content: ""; }
+
+.fa-file-powerpoint-o:before {
+  content: ""; }
+
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: ""; }
+
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: ""; }
+
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: ""; }
+
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: ""; }
+
+.fa-file-code-o:before {
+  content: ""; }
+
+.fa-vine:before {
+  content: ""; }
+
+.fa-codepen:before {
+  content: ""; }
+
+.fa-jsfiddle:before {
+  content: ""; }
+
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: ""; }
+
+.fa-circle-o-notch:before {
+  content: ""; }
+
+.fa-ra:before,
+.fa-rebel:before {
+  content: ""; }
+
+.fa-ge:before,
+.fa-empire:before {
+  content: ""; }
+
+.fa-git-square:before {
+  content: ""; }
+
+.fa-git:before {
+  content: ""; }
+
+.fa-hacker-news:before {
+  content: ""; }
+
+.fa-tencent-weibo:before {
+  content: ""; }
+
+.fa-qq:before {
+  content: ""; }
+
+.fa-wechat:before,
+.fa-weixin:before {
+  content: ""; }
+
+.fa-send:before,
+.fa-paper-plane:before {
+  content: ""; }
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: ""; }
+
+.fa-history:before {
+  content: ""; }
+
+.fa-genderless:before,
+.fa-circle-thin:before {
+  content: ""; }
+
+.fa-header:before {
+  content: ""; }
+
+.fa-paragraph:before {
+  content: ""; }
+
+.fa-sliders:before {
+  content: ""; }
+
+.fa-share-alt:before {
+  content: ""; }
+
+.fa-share-alt-square:before {
+  content: ""; }
+
+.fa-bomb:before {
+  content: ""; }
+
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: ""; }
+
+.fa-tty:before {
+  content: ""; }
+
+.fa-binoculars:before {
+  content: ""; }
+
+.fa-plug:before {
+  content: ""; }
+
+.fa-slideshare:before {
+  content: ""; }
+
+.fa-twitch:before {
+  content: ""; }
+
+.fa-yelp:before {
+  content: ""; }
+
+.fa-newspaper-o:before {
+  content: ""; }
+
+.fa-wifi:before {
+  content: ""; }
+
+.fa-calculator:before {
+  content: ""; }
+
+.fa-paypal:before {
+  content: ""; }
+
+.fa-google-wallet:before {
+  content: ""; }
+
+.fa-cc-visa:before {
+  content: ""; }
+
+.fa-cc-mastercard:before {
+  content: ""; }
+
+.fa-cc-discover:before {
+  content: ""; }
+
+.fa-cc-amex:before {
+  content: ""; }
+
+.fa-cc-paypal:before {
+  content: ""; }
+
+.fa-cc-stripe:before {
+  content: ""; }
+
+.fa-bell-slash:before {
+  content: ""; }
+
+.fa-bell-slash-o:before {
+  content: ""; }
+
+.fa-trash:before {
+  content: ""; }
+
+.fa-copyright:before {
+  content: ""; }
+
+.fa-at:before {
+  content: ""; }
+
+.fa-eyedropper:before {
+  content: ""; }
+
+.fa-paint-brush:before {
+  content: ""; }
+
+.fa-birthday-cake:before {
+  content: ""; }
+
+.fa-area-chart:before {
+  content: ""; }
+
+.fa-pie-chart:before {
+  content: ""; }
+
+.fa-line-chart:before {
+  content: ""; }
+
+.fa-lastfm:before {
+  content: ""; }
+
+.fa-lastfm-square:before {
+  content: ""; }
+
+.fa-toggle-off:before {
+  content: ""; }
+
+.fa-toggle-on:before {
+  content: ""; }
+
+.fa-bicycle:before {
+  content: ""; }
+
+.fa-bus:before {
+  content: ""; }
+
+.fa-ioxhost:before {
+  content: ""; }
+
+.fa-angellist:before {
+  content: ""; }
+
+.fa-cc:before {
+  content: ""; }
+
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: ""; }
+
+.fa-meanpath:before {
+  content: ""; }
+
+.fa-buysellads:before {
+  content: ""; }
+
+.fa-connectdevelop:before {
+  content: ""; }
+
+.fa-dashcube:before {
+  content: ""; }
+
+.fa-forumbee:before {
+  content: ""; }
+
+.fa-leanpub:before {
+  content: ""; }
+
+.fa-sellsy:before {
+  content: ""; }
+
+.fa-shirtsinbulk:before {
+  content: ""; }
+
+.fa-simplybuilt:before {
+  content: ""; }
+
+.fa-skyatlas:before {
+  content: ""; }
+
+.fa-cart-plus:before {
+  content: ""; }
+
+.fa-cart-arrow-down:before {
+  content: ""; }
+
+.fa-diamond:before {
+  content: ""; }
+
+.fa-ship:before {
+  content: ""; }
+
+.fa-user-secret:before {
+  content: ""; }
+
+.fa-motorcycle:before {
+  content: ""; }
+
+.fa-street-view:before {
+  content: ""; }
+
+.fa-heartbeat:before {
+  content: ""; }
+
+.fa-venus:before {
+  content: ""; }
+
+.fa-mars:before {
+  content: ""; }
+
+.fa-mercury:before {
+  content: ""; }
+
+.fa-transgender:before {
+  content: ""; }
+
+.fa-transgender-alt:before {
+  content: ""; }
+
+.fa-venus-double:before {
+  content: ""; }
+
+.fa-mars-double:before {
+  content: ""; }
+
+.fa-venus-mars:before {
+  content: ""; }
+
+.fa-mars-stroke:before {
+  content: ""; }
+
+.fa-mars-stroke-v:before {
+  content: ""; }
+
+.fa-mars-stroke-h:before {
+  content: ""; }
+
+.fa-neuter:before {
+  content: ""; }
+
+.fa-facebook-official:before {
+  content: ""; }
+
+.fa-pinterest-p:before {
+  content: ""; }
+
+.fa-whatsapp:before {
+  content: ""; }
+
+.fa-server:before {
+  content: ""; }
+
+.fa-user-plus:before {
+  content: ""; }
+
+.fa-user-times:before {
+  content: ""; }
+
+.fa-hotel:before,
+.fa-bed:before {
+  content: ""; }
+
+.fa-viacoin:before {
+  content: ""; }
+
+.fa-train:before {
+  content: ""; }
+
+.fa-subway:before {
+  content: ""; }
+
+.fa-medium:before {
+  content: ""; }
+
+/**
+ * `animation` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation animation on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `animation-delay` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay animation-delay on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `background-size` prefixer.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/background-size background-size on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `border-radius` prefixer.
+ *
+ * @param {Number} $radius (5px)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius border-radius on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `box-shadow` prefixer.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow box-shadow on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `box-sizing` prefixer.
+ *
+ * @param {String} $box
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing box-sizing on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `column-width` prefixer. Uses `rem` if defined.
+ *
+ * @param {String} $box
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/column-width column-width on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `flex` prefixer.
+ *
+ * @param {Number}          $flex-grow   (0)
+ * @param {Number}          $flex-shring (1)
+ * @param {Number | String} $flex-basis  (auto)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `flex-direction` prefixer.
+ *
+ * @param {String} $direction row | row-reverse | column | column-reverse
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction flex-direction on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `flex-basis` prefixer.
+ *
+ * @param {Number | String} $value (auto)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis flex-basis on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `display: flex` prefixer.
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex flex on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `flex-grow` prefixer.
+ *
+ * @param {Number} $value (0)
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow flex-grow on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `@keyframes` prefixer.
+ *
+ * @param {String} $name
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes @keyframes on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `transform: rotate()` prefixer.
+ *
+ * @param {Number} $angle
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform#rotate transform: rotate() on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `position: sticky` prefixer.
+ * Support is very limited but should be used in iOS.
+ * Note that Blink temporarily dropped support until they get their
+ * "scrolling and compositing house in order"
+ *
+ * @link http://updates.html5rocks.com/2012/08/Stick-your-landings-position-sticky-lands-in-WebKit position: sticky on WebKit
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning position: sticky on MDN
+ * @link https://code.google.com/p/chromium/issues/detail?id=231752 Meta bug for position: sticky on Chromium's tracker
+ * 
+ * @group css3
+ */
+/**
+ * `transform` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform transform on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `transform-origin` prefixer.
+ *
+ * @param {*} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin transform-origin on MDN
+ * 
+ * @group css3
+ */
+/**
+ * `transition` prefixer.
+ * Do not use when transitionning prefixed properties
+ * to avoid impossible code like `-moz-transition: -webkit-border-radius 1s`.
+ *
+ * @param {Arglist} $args
+ *
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/transition transition on MDN
+ * 
+ * @group css3
+ */
+/**
+ * Default rem baseline.
+ * 
+ * @type Number
+ */
+/**
+ * Transform a value into rem.
+ *
+ * @param {Number} $value
+ * @param {Number} $baseline ($guss-rem-baseline)
+ *
+ * @requires {variable} guss-rem-baseline
+ *
+ * @return {List | Number}
+ */
+/**
+ * Output `rem` units with `px` fallback.
+ *
+ * @link http://sassmeister.com/gist/7451284 Usage
+ * 
+ * @param {Map} $properties
+ *
+ * @requires {function} rem
+ */
+/**
+ * Gutter width.
+ *
+ * @type Number
+ *
+ * @group grid-system
+ */
+/**
+ * Baseline size.
+ *
+ * @type Number
+ *
+ * @group grid-system
+ */
+/**
+ * Column width.
+ *
+ * @type Number
+ *
+ * @group grid-system
+ */
+/**
+ * Row height.
+ *
+ * @type Number
+ *
+ * @group grid-system
+ */
+/**
+ * Number of columns.
+ *
+ * @type Number
+ *
+ * @group grid-system
+ */
+/**
+ * Grid span.
+ * Compute the width of a given number of grid columns.
+ *
+ * @example
+ * .element {
+ *   width: gs-span(3);
+ * }
+ *
+ * @param {Number} $n-columns
+ *
+ * @requires {variable} gs-column-width
+ * @requires {variable} gs-gutter
+ *
+ * @return {Number}
+ *
+ * @group grid-system
+ */
+/**
+ * Grid height.
+ * Compute the height of a given number of vertical grid units.
+ *
+ * @example
+ * .element {
+ *   padding-top: gs-height(2);
+ * }
+ *
+ * @param {Number} $n-rows
+ *
+ * @requires {variable} gs-row-height
+ * @requires {variable} gs-baseline
+ *
+ * @return {Number}
+ *
+ * @group grid-system
+ */
+/**
+ * Grid container.
+ * Snaps to `$gs-max-columns` columns at the wide breakpoint.
+ *
+ * @requires {mixin} mq
+ * @requires {function} gs-span
+ * @requires {variable} gs-gutter
+ * @requires {variable} gs-max-columns
+ *
+ * @group grid-system
+ */
+/**
+ * Grid columns helper classes, useful for quick prototyping.
+ *
+ * @example markup
+ * <div class="gs-span-3"></div>
+ *
+ * @requires {variable} gs-max-columns
+ * @requires {function} gs-span
+ *
+ * @group grid-system
+ */
+/**
+ * Grid system.
+ *
+ * @requires {mixin} gs-container
+ *
+ * @group grid-system
+ */
+/* ==========================================================================
+   Guss: row
+   ========================================================================== */
+/**
+ * Row utility class.
+ *
+ * @type String
+ *
+ * @group layout
+ */
+/**
+ * When set to false, output a simpler version with a static width.
+ *
+ * @link http://caniuse.com/#feat=flexbox Flexbox support table
+ *
+ * @type Bool
+ *
+ * @group layout
+ */
+/**
+ * Classes to manage feature-detection support for flex. Override if your
+ * detection uses a different convention.
+ *
+ * @link http://modernizr.com/docs/#flexbox Modernizr detection for flex
+ *
+ * @type String
+ *
+ * @group layout
+ */
+/**
+ * Static width for older browsers.
+ *
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * A row is an ensemble of 2, 3 or 4 items that are originally stacked
+ * vertically on mobile and flow horizontally on higher breakpoints.
+ *
+ * @param {String} $base-class
+ *
+ * @requires {variable} browser-supports-flexbox
+ * @requires {variable} guss-row-fallback-width
+ * @requires {mixin} mq
+ * @requires {mixin} flex-grow
+ * @requires {mixin} flex-basis
+ *
+ * @link http://sassmeister.com/gist/9b6033675b0f01de21f0 Examples on Sassmeister
+ *
+ * @example scss
+ *  // Sass Mixin
+ *  @include guss-row('.classname');
+ *
+ * @example scss
+ *  // Utility class set as `$guss-row-utility-class`
+ *  @include guss-row-utility;
+ *
+ * @example markup
+ * <div class="l-row l-row--items-<number of items contained>">
+ *     <div class="l-row__item [l-row__item--boost-2]"></div>
+ *     <div class="l-row__item"></div>
+ *     <div class="l-row__item"></div>
+ *     <div class="l-row__item [l-row__item--boost-1]"></div>
+ * </div>
+ * <!-- --boost-n modifiers are used to add visual importance to an item.
+ * Note that this applies only to browsers that support flexbox. -->
+ *
+ * @group layout
+ */
+/**
+ * Rows for flex browsers.
+ *
+ * @requires {variable} base-class
+ *
+ * @group layout
+ */
+/**
+ * Rows for non-flex browsers.
+ *
+ * @requires {variable} base-class
+ * @requires {variable} guss-row-fallback-width
+ *
+ * @group layout
+ */
+/**
+ * Row utility.
+ *
+ * @requires {variable} guss-row-utility-class
+ * @requires {mixin} guss-row
+ *
+ * @group layout
+ */
+/* ==========================================================================
+   Guss: columns
+   ========================================================================== */
+/**
+ * Minimum column width.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Column gutter.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Column utility class.
+ * 
+ * @type String
+ *
+ * @group layout
+ */
+/**
+ * When set to false, output a simpler version with a static width.
+ *
+ * @link http://caniuse.com/#feat=multicolumn Column support table
+ * 
+ * @type Bool
+ *
+ * @group layout
+ */
+/**
+ * Fallback width when CSS3 columns support is disabled.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Number of columns in the non-responsive version.
+ * 
+ * @type Number
+ *
+ * @group layout
+ */
+/**
+ * Width of fallback column item.
+ *
+ * @param {Number} $container-width
+ * @param {Number} $gap-between-columns
+ * @param {Number} $number-of-columns
+ *
+ * @return {Number}
+ *
+ * @group layout
+ */
+/**
+ * A "columns pattern" fits as many "$guss-column-min-width"-wide columns
+ * in any type of context: full-width container, sidebar…
+ *
+ * @param {String} $base-class
+ * @param {Number} $column-min-width         ($guss-column-min-width)
+ * @param {Number} $column-gap               ($guss-column-gap)
+ * @param {Number} $columns-fallback-width   ($guss-columns-fallback-width)
+ * @param {Number} $columns-fallback-columns ($guss-columns-fallback-columns)
+ * @param {Bool}   $css3-columns-support     ($browser-supports-columns)
+ *
+ * @requires {variable} guss-column-min-width
+ * @requires {variable} guss-column-gap
+ * @requires {variable} guss-columns-fallback-width
+ * @requires {variable} guss-columns-fallback-columns
+ * @requires {variable} browser-supports-columns
+ * @requires {function} width-of-fallback-column-item
+ * @requires {function} rem
+ * @requires {mixin} mq
+ *
+ * @link http://sassmeister.com/gist/5c09ed0242085ba8d705 Examples on Sassmeister
+ * 
+ * @example
+ *  // Usage 1: Sass mixin
+ *  @include guss-columns('.classname');
+ *
+ *  // Usage 2: utility class set as `$guss-columns-utility-class`
+ *  @include guss-columns-utility;
+ *
+ * @example markup
+ * <div class="l-columns">
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ *     <div class="l-columns__item"></div>
+ * </div>
+ *
+ * @group layout
+ */
+/**
+ * Column utility.
+ *
+ * @requires {mixin} guss-columns
+ * @requires {variable} guss-columns-utility-class
+ *
+ * @group layout
+ */
+/**
+ * Data font stack
+ *
+ * @group typography
+ */
+/**
+ * Serif font stack
+ *
+ * @group typography
+ */
+/**
+ * Headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif text font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Default font scale settings
+ * See font-scale.html and font-scale.png for visual representations
+ *
+ * @group typography
+ */
+/**
+ * Grab all levels of a font the font-scale
+ *
+ * @param {String} $name - Name of the font-scale matrix (eg: headline)
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale(header);
+ *
+ * @requires {variable} $font-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Grab info for a particular level of a font-scale
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale-level(header, 1);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} get-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Get a font-size for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-font-size(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Get a line-height for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-line-height(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Turn any value into pixels
+ *
+ * @param {Number} $value
+ *
+ * @example
+ *  font-size: convert-to-px(14); // 14px
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Default typography settings, to be included as soon as possible in the HTML
+ * 1. Make type rendering look crisper
+ * 2. Set relative line spacing to 1.5 (16px * 1.5 = 24px)
+ *
+ * @param {String} $font-family ($f-serif-text) - Default global font
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Font-size and line-height shorthand
+ *
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font-size(18, 24);
+ *
+ * @requires {function} convert-to-px
+ *
+ * @group typography
+ */
+/**
+ * Font styling shorthand  
+ * Note: prefer the usage of the font-scale mixins to stick to the font scale
+ *
+ * @param {String} $family
+ * @param {String} $weight
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font(arial, bold, 18, 24);
+ *
+ * @requires {mixin} font-size
+ *
+ * @group typography
+ */
+/**
+ * Header family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Header typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-header(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-header(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-header
+ *
+ * @group typography
+ */
+/**
+ * Healdine family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Headline typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-headline(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-headline(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-headline
+ *
+ * @group typography
+ */
+/**
+ * Body Heading family and weight properties.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Heading typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-bodyHeading(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyHeading(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyHeading
+ *
+ * @group typography
+ */
+/**
+ * Body Copy family property.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Copy typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-bodyCopy(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyCopy(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyCopy
+ *
+ * @group typography
+ */
+/**
+ * Data family property.
+ *
+ * @requires {variable} $f-data
+ *
+ * @group typography
+ */
+/**
+ * Data typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-data(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-data(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-data
+ *
+ * @group typography
+ */
+/**
+ * Text Sans family property.
+ *
+ * @requires {variable} $f-sans-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Text Sans typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-textSans(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-textSans(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-textSans
+ *
+ * @group typography
+ */
+/**
+ * Headline Sans family property.  
+ * Is not currently integrated into our font scale matrix,
+ * hence no `fs-` mixin; currently we're just using it as a
+ * replacement font in a few places.
+ *
+ * @requires {variable} $f-sans-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * An example of a colour palette to be used with guss-colours
+ *
+ * If you're looking for the guardian colour palette: https://github.com/guardian/pasteup-palette
+ * 
+ * @type Map
+ *
+ * @group colours
+ */
+/**
+ * Get a colour from a given colour palette.
+ * 
+ * @param {String} $name                    - colour to get
+ * @param {Map}    $palette ($guss-colours) - palette
+ *
+ * @requires {variable} guss-colours
+ *
+ * @return {Color | Null}
+ *
+ * @group colours
+ */
+/**
+ * Generate helper classes for a given colour palette  
+ * Outputs rules such as: `.c-red { color: red; }`.
+ *
+ * @param {Map}    $palette  ($guss-colours) - palette
+ * @param {String} $prefix   ("c-")          - prefix
+ * @param {String} $property ("color")       - property
+ *
+ * @requires {variable} guss-colours
+ *
+ * @group colours
+ */
+/**
+ * Base URL
+ * URL can be an absolute HTTP (`//pasteup.guim.co.uk/fonts/`) or relative (`../`)
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Version of the fonts to use
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Hinting
+ *
+ * - on: larger file, better rendering in Windows
+ * - off: smaller files, render well on HiDPI displays
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Kerning
+ *
+ * - on: larger file, better rendering
+ * - off: smaller files
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Charset
+ *
+ * - ascii: 256 characters only, very small
+ * - latin1: latin 1 character set
+ * - original: full character set
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Complete path
+ *
+ * @requires {variable} guss-webfonts-charset
+ * @requires {variable} guss-webfonts-hinting
+ * @requires {variable} guss-webfonts-kerning
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Human-readable Font-weights
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/* Extra fonts
+   ========================================================================== */
+/**
+ * Extra fonts directory
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Extra fonts list
+ *
+ * @type List
+ *
+ * @group webfonts
+ */
+/* Font registry
+   ========================================================================== */
+/**
+ * Font registry
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/**
+ * Machine-readable CSS font-weight.
+ *
+ * @param {String} $keyword - Human-readable keyword in $guss-font-weights
+ *
+ * @requires {variable} guss-font-weights
+ *
+ * @example scss
+ * font-weight: guss-font-weight(light);
+ *
+ * @return {Number} - CSS font-weight
+ *
+ * @group webfonts
+ */
+/**
+ * Is this font stored in `$guss-extras-directory`?
+ *
+ * @param {String} $font-family - Font to look for
+ *
+ * @requires {variable} guss-webfonts-extras
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Replace `$search` by `$replace` in `$string`.
+ *
+ * @author Hugo Giraudel
+ *
+ * @param {String} $string - string to update
+ * @param {String} $search - value to replace
+ * @param {String} $replace ('') - new value
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Remove white space in $string
+ *
+ * @requires {function} str-replace
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Capitalise first letter of $string
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont filename
+ *
+ * @param {String} $font-family - font family
+ * @param {String} $weight - weight, member of $guss-font-weights
+ * @param {String} $style - normal | italic
+ *
+ * @requires {function} str-capitalise
+ * @requires {function} str-remove-white-space
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont path
+ * "My Font" is in the MyFont/ directory
+ * "Extra" fonts are stored in `$guss-extras-directory`.
+ *
+ * @param {String} $font-family - font name
+ *
+ * @requires {variable} guss-extras-directory
+ * @requires {variable} guss-webfonts-path
+ * @requires {function} str-remove-white-space
+ *
+ * @return {String} - Path to the font
+ *
+ * @group webfonts
+ */
+/**
+ * Look for `$needle` in `$haystack`.
+ *
+ * @param {List}   $haystack - List to search in
+ * @param {String} $needle - The string to look for
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Output a @font-face declaration at root level.
+ *
+ * @param {String} $family - List to search in
+ * @param {String} $file - The filename
+ * @param {String} $base-path - Directory where the font is stored
+ * @param {Number} $weight (400) - CSS font-weight
+ * @param {String} $style (normal) - CSS font-style
+ * @param {String} $url ($guss-webfonts-base-url) - URL
+ *
+ * @requires {variable} guss-webfonts-base-url
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for a Guss webfont.
+ *
+ * @param {Number} $font-family - ID of the font in $guss-webfonts
+ * @param {Map} $properties - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ * @param {Map} $overrides - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {function} compose-webfont-filename
+ * @requires {function} compose-webfont-path
+ * @requires {function} guss-font-weight
+ * @requires {mixin} guss-at-font-face
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for Guss webfonts.
+ *
+ * @param {String|List|Map} $fonts ($guss-webfonts) - Fonts to output
+ * @param {Map} $registry ($guss-webfonts) - Font registry
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {mixin} guss-webfonts-single-declaration
+ * @requires {mixin} guss-webfonts
+ *
+ * @group webfonts
+ */
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.svg#GuardianAgateSans1Web-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.svg#GuardianAgateSans1Web-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.svg#GuardianAgateSans1Web-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.svg#GuardianAgateSans1Web-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.svg#GuardianEgyptianWeb-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.svg#GuardianEgyptianWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.svg#GuardianEgyptianWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.svg#GuardianEgyptianWeb-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.svg#GuardianEgyptianWeb-SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.svg#GuardianEgyptianWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.svg#GuardianEgyptianWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.svg#GuardianEgyptianWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.svg#GuardianSansWeb-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.svg#GuardianSansWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.svg#GuardianSansWeb-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.svg#GuardianTextEgyptianWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.svg#GuardianTextEgyptianWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.svg#GuardianTextEgyptianWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.svg#GuardianTextEgyptianWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.svg#GuardianTextEgyptianWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.svg#GuardianTextEgyptianWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.svg#GuardianTextEgyptianWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.svg#GuardianTextEgyptianWeb-BlackItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.svg#GuardianTextSansWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.svg#GuardianTextSansWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.svg#GuardianTextSansWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.svg#GuardianTextSansWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.svg#GuardianTextSansWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.svg#GuardianTextSansWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.svg#GuardianTextSansWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.svg#GuardianTextSansWeb-BlackItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Compact Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.svg#GuardianCompactWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Titlepiece Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.svg#GuardianTitlepieceWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: "Guardian Weekend Cond Web";
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.svg#GuardianWeekendCondWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal; }
+html {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  -moz-osx-font-smoothing: grayscale;
+  /* 1 */
+  -webkit-font-smoothing: antialiased;
+  /* 1 */ }
+
+body {
+  line-height: 1.5;
+  /* 2 */ }
+html {
+  font-size: 62.5%;
+  line-height: 1.4; }
+
+body {
+  margin: 0;
+  background: #000; }
+
+.interactive {
+  margin: 0; }
+
+a {
+  color: guss-color("guardian-brand");
+  text-decoration: none; }
+
+p {
+  font-size: 1.6rem; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.blur {
+  -webkit-filter: blur(250%);
+  filter: blur(250%); }
+
+[data-layout=Container] {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  [data-layout=Container]::after {
+    clear: both;
+    content: "";
+    display: table; }
+[data-layout-desktop="1"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  [data-layout-desktop="1"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="1"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%; }
+    [data-layout-tablet="1"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="1"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%; }
+    [data-layout-mobile="1"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-1"] {
+  margin-left: 8.5298%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-1"] {
+    margin-left: 8.5298%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-1"] {
+    margin-left: 8.5298%; } }
+
+[data-layout-desktop="2"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  [data-layout-desktop="2"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="2"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    [data-layout-tablet="2"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="2"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    [data-layout-mobile="2"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-2"] {
+  margin-left: 17.05961%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-2"] {
+    margin-left: 17.05961%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-2"] {
+    margin-left: 17.05961%; } }
+
+[data-layout-desktop="3"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  [data-layout-desktop="3"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="3"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    [data-layout-tablet="3"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="3"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    [data-layout-mobile="3"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-3"] {
+  margin-left: 25.58941%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-3"] {
+    margin-left: 25.58941%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-3"] {
+    margin-left: 25.58941%; } }
+
+[data-layout-desktop="4"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  [data-layout-desktop="4"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="4"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    [data-layout-tablet="4"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="4"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    [data-layout-mobile="4"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-4"] {
+  margin-left: 34.11922%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-4"] {
+    margin-left: 34.11922%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-4"] {
+    margin-left: 34.11922%; } }
+
+[data-layout-desktop="5"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  [data-layout-desktop="5"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="5"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    [data-layout-tablet="5"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="5"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    [data-layout-mobile="5"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-5"] {
+  margin-left: 42.64902%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-5"] {
+    margin-left: 42.64902%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-5"] {
+    margin-left: 42.64902%; } }
+
+[data-layout-desktop="6"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  [data-layout-desktop="6"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="6"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    [data-layout-tablet="6"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="6"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    [data-layout-mobile="6"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-6"] {
+  margin-left: 51.17883%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-6"] {
+    margin-left: 51.17883%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-6"] {
+    margin-left: 51.17883%; } }
+
+[data-layout-desktop="7"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  [data-layout-desktop="7"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="7"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    [data-layout-tablet="7"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="7"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    [data-layout-mobile="7"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-7"] {
+  margin-left: 59.70863%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-7"] {
+    margin-left: 59.70863%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-7"] {
+    margin-left: 59.70863%; } }
+
+[data-layout-desktop="8"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  [data-layout-desktop="8"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="8"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    [data-layout-tablet="8"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="8"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    [data-layout-mobile="8"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-8"] {
+  margin-left: 68.23843%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-8"] {
+    margin-left: 68.23843%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-8"] {
+    margin-left: 68.23843%; } }
+
+[data-layout-desktop="9"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  [data-layout-desktop="9"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="9"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    [data-layout-tablet="9"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="9"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    [data-layout-mobile="9"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-9"] {
+  margin-left: 76.76824%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-9"] {
+    margin-left: 76.76824%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-9"] {
+    margin-left: 76.76824%; } }
+
+[data-layout-desktop="10"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  [data-layout-desktop="10"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="10"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    [data-layout-tablet="10"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="10"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    [data-layout-mobile="10"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-10"] {
+  margin-left: 85.29804%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-10"] {
+    margin-left: 85.29804%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-10"] {
+    margin-left: 85.29804%; } }
+
+[data-layout-desktop="11"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  [data-layout-desktop="11"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="11"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%; }
+    [data-layout-tablet="11"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="11"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%; }
+    [data-layout-mobile="11"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-11"] {
+  margin-left: 93.82785%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-11"] {
+    margin-left: 93.82785%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-11"] {
+    margin-left: 93.82785%; } }
+
+[data-layout-desktop="12"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  [data-layout-desktop="12"]:last-child {
+    margin-right: 0; }
+
+@media (max-width: 61.24em) {
+  [data-layout-tablet="12"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    [data-layout-tablet="12"]:last-child {
+      margin-right: 0; } }
+
+@media (max-width: 46.24em) {
+  [data-layout-mobile="12"] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    [data-layout-mobile="12"]:last-child {
+      margin-right: 0; } }
+
+[data-layout-mobile-shift="-12"] {
+  margin-left: 102.35765%; }
+
+@media (min-width: 46.25em) {
+  [data-layout-tablet-shift="-12"] {
+    margin-left: 102.35765%; } }
+
+@media (min-width: 61.25em) {
+  [data-layout-desktop-shift="-12"] {
+    margin-left: 102.35765%; } }
+
+box, layout, row {
+  display: block; }
+
+row {
+  display: block; }
+  row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+[data-box-type=CoverBox] {
+  padding: 3rem; }
+
+.Wrapp {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.Cover {
+  background-color: #000;
+  background-image: url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+  box-sizing: content-box; }
+  .Cover a {
+    color: #fff;
+    text-decoration: underline; }
+  .Cover p {
+    color: #fff; }
+.Cover {
+  background-color: #000;
+  background-image: url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+  box-sizing: content-box; }
+  .Cover a {
+    color: #fff;
+    text-decoration: underline; }
+  .Cover p {
+    color: #fff; }
+.CoverStandFirst, .CoverTitle {
+  color: #fff;
+  margin: 0 0rem;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 600;
+  border-bottom: none;
+  border-color: #fff; }
+
+.Cover {
+  background-color: #000;
+  background-image: url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+  box-sizing: content-box; }
+  .Cover a {
+    color: #fff;
+    text-decoration: underline; }
+  .Cover p {
+    color: #fff; }
+.Cover {
+  background-color: #000;
+  background-image: url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+  box-sizing: content-box; }
+  .Cover a {
+    color: #fff;
+    text-decoration: underline; }
+  .Cover p {
+    color: #fff; }
+.CoverStandFirst, .CoverTitle {
+  color: #fff;
+  margin: 0 0rem;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 600;
+  border-bottom: none;
+  border-color: #fff; }
+
+.CoverStandFirst {
+  color: #bfbfbf;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+  border-color: #bfbfbf; }
+
+.Cover {
+  background-color: #000;
+  background-image: url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 2rem);
+  padding-top: 2rem;
+  box-sizing: content-box; }
+  .Cover a {
+    color: #fff;
+    text-decoration: underline; }
+  .Cover p {
+    color: #fff; }
+.CoverByLine {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 1rem;
+  line-height: 20px;
+  color: #767676; }
+  .CoverByLine:before {
+    content: "by ";
+    color: #fff; }
+
+.CoverPoster {
+  margin-bottom: 1rem; }
+  .CoverPoster img {
+    object-fit: contain;
+    width: 100%; }
+  .CoverPoster .caption {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #767676; }
+
+.Cover {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg");
+  background-size: cover;
+  background-position: -150px center; }
+
+.CoverStandFirst {
+  line-height: 1.1; }
