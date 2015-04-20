@@ -49,6 +49,9 @@ $CoverStandFirst--padding-bottom: 1rem !default;
 	@extend %CoverTitle;
 	@include returnContrastedProperty($Cover--background-color, $CoverStandFirst--color, color, lighten($dark-text-default, $lighten-percentage),  darken($light-text-default, $darken-percentage));
 	font-size: $CoverStandFirst--font-size;
+	@include mq($until: tablet){
+		font-size: $CoverStandFirst--font-size * .6;
+	}
 	font-weight: $CoverStandFirst--font-weight;
 	margin-top: convert-to-px($CoverStandFirst-margin-top); 
 	border-bottom: $CoverStandFirst--borderbottom;

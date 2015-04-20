@@ -21,25 +21,23 @@ $body-background: #fff !default;
 @include guss-webfonts();
 @include guss-typography-defaults;
 
-// Base Styles
-html{
-  font-size: 62.5%;
-  line-height: 1.4;
-}
+
 body {
   margin: 0;
   background: $body-background;
 }
 .interactive {
   margin: 0;
+  	a {
+		color: $defaultAnchorColor;
+		text-decoration: none;
+	}
+	p:first-child {
+		margin-top: 0;
+		//font-size: 1.6rem;
+	}
 }
-a {
-	color: $defaultAnchorColor;
-	text-decoration: none;
-}
-p {
-	font-size: 1.6rem;
-}
+
 
 
 

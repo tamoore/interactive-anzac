@@ -46,7 +46,13 @@ row {
 	@include row();
 }
 [data-box-type=CoverBox]{
-	@include pad(3rem);
+	@include pad(1rem);
+	@include mq($from: tablet){
+		@include pad(3rem);
+	}
+	
+
+
 }
 
 

@@ -31,9 +31,13 @@
 .CoverStandFirst {
 	@extend %CoverStandFirst;
 	line-height: 1.1;
+	margin-top: 0;
 }
 .CoverByLine {
 	@extend %CoverByLine;
+  	&:before {
+	  display: none;
+	}
 }
 .CoverPoster {
 	@extend %CoverPoster;

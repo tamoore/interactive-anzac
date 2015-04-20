@@ -126,8 +126,8 @@ define([
 				}, 10000);
 			} else {
 				clearTimeout(timer);
-				var id = $(target).parent().find("video")[0].getAttribute("id")
-				if (document.getElementById(id).play) {
+				if($(target).parent().find("video").length){
+					var id = $(target).parent().find("video")[0].getAttribute("id")
 					target.parent().addClass("parent-on");
 
 					_me = new MediaElementPlayer(document.getElementById(id), {loop: true, defaultVideoWidth: "100%", enableAutosize: false });
@@ -143,6 +143,11 @@ define([
 					})
 
 
+				}else{
+					target.parent().addClass("parent-on");
+					target.parent().addClass("playing");
+					target.parent().removeClass("off");
+					target.addClass("on");
 				}
 
 

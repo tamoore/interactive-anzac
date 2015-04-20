@@ -26,6 +26,7 @@ $Wrapp-constrain: true;
 // Cover Background Color
 // guss-color("features-support-3")
 $Cover--background-color: $coverBackground;
+$CoverTitle--font-size: 3.5rem;
 
 //Cover background Image
 //$Cover--background-image: 'http://i.guim.co.uk/static/w-1220/h--/q-180/sys-images/Guardian/Pix/pictures/2015/4/17/1429266468797/LandingAtAriBurnu.jpg';
@@ -42,4 +43,4 @@ $CoverTitle--borderbottom: none;
 
 //Stand first text color
 $CoverStandFirst--color: $coverText;
-$CoverStandFirst--font-size: 3rem;
+$CoverStandFirst--font-size: $CoverTitle--font-size * .6;
